@@ -1,0 +1,135 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         24/Mar/2020  17:58:06
+# Copyright 1999-2019 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\Pin.cpp
+#    Command line =
+#        -f C:\Users\User\AppData\Local\Temp\EW1D3.tmp
+#        (D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\Pin.cpp
+#        -lC D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Debug\List -lA
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Debug\List -o
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Debug\Obj --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e
+#        --fpu=VFPv4_sp --dlib_config "C:\Programs\IAR
+#        Arm\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\wrapper\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\wrapper\FreeRtos\
+#        -I D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\include\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\portable\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\portable\Common\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\portable\IAR\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Rtos\FreeRtos\portable\MemMang\
+#        -I D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\MyTasks\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Common\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\CMSIS\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Application\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Application\Diagnostic\
+#        -I D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AHardware\ -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AHardware\GpioPort\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AHardware\IrqController\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Pin\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Registers\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Port\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\AbstractHardware\Atomic\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\Common\
+#        -I
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\..\CortexLib\Common\Singleton\
+#        -I D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\
+#        -Ol --c++ --no_exceptions --no_rtti)
+#    Locale       =  C
+#    List file    =
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Debug\List\Pin.lst
+#    Object file  =
+#        D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Debug\Obj\Pin.o
+#
+###############################################################################
+
+D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\Pin.cpp
+      1          //Pin.cpp
+      2          
+      3          #include "Pin.hpp"
+
+    static bool IsSet() {} 
+                         ^
+"D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\Pin.hpp",20  Warning[Pe940]: 
+          missing return statement at end of non-void function "Pin<Port,
+          PortNum>::IsSet"
+      4          #include "gpioaregisters.hpp" //for gpioa
+      5          #include "gpiobregisters.hpp" //for gpiob
+      6          #include "gpiocregisters.hpp" //for gpioc
+      7          #include "gpiodregisters.hpp" //for gpiod
+      8          #include "gpioeregisters.hpp" //for gpioe
+      9          #include "gpiohregisters.hpp" //for gpioh
+     10          
+     11            void Pin::SetInput() {
+                        ^
+Error[Pe441]: argument list for class template "Pin" is missing
+     12              volatile auto value = Port::MODER::Get() ;
+                                           ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     13              value &= ~ (0 << (PortNum * 2U)) ;
+                                       ^
+Error[Pe020]: identifier "PortNum" is undefined
+     14              value |= (Port::MODER::FieldValues::Input::Value << (PortNum * 2U)) ;
+                               ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     15              Port::MODER::Write(value);
+                     ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     16            }
+     17           
+     18            void Pin::SetAlternate() {
+                        ^
+Error[Pe441]: argument list for class template "Pin" is missing
+     19              volatile auto value = Port::MODER::Get() ;
+                                           ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     20              value &= ~(2 << (PortNum * 2U)) ;
+                                      ^
+Error[Pe020]: identifier "PortNum" is undefined
+     21              value |= (Port::MODER::FieldValues::Alternate::Value << (PortNum * 2U)) ;
+                               ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     22              Port::MODER::Write(value);
+                     ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+     23            }
+     24            
+     25            bool Pin::IsSet() {
+                        ^
+Error[Pe441]: argument list for class template "Pin" is missing
+     26              return ((Port::IDR::Get() & (1 << PortNum)) != 0);
+                              ^
+Error[Pe276]: name followed by "::" must be a class or namespace name
+
+      return ((Port::IDR::Get() & (1 << PortNum)) != 0);
+                                        ^
+"D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\Pin.cpp",26  Error[Pe020]: 
+          identifier "PortNum" is undefined
+     27            } 
+
+Errors: 13
+Warnings: 1
