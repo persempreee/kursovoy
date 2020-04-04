@@ -1,5 +1,6 @@
 #pragma once
 #include "UsartConfig.hpp" // for UsartConfig, tParity, tBitsSize
+#include <cmath> //for USARTDIV
 
 template <typename USARTModule, uint32_t ClockSpeed>
 class USART {
@@ -73,33 +74,35 @@ private:
         break ;
       }
     }
-    
-   static void SetSpeed(Speed speed) {
-     USARTDIV = CloockSpeed/(speed*16)
+  
+    static void SetSpeed(Speed speed) {
+    uint32_t speednum ;
       switch (speed) {
       case Speed::Speed2400:
-        USARTModule::BRR::Write(USARTDIV<<4) ;
+      speednum = 2400 ;
         break ;
       case Speed::Speed4800:
-        USARTModule::BRR::Write(208<<4) ;
+      speednum = 4800 ;
         break ;
       case Speed::Speed9600:
-        USARTModule::BRR::Write(104<<4) ;
+      speednum = 9600 ;
         break ;
       case Speed::Speed19200:
-        USARTModule::BRR::Write(52<<4) ;
+      speednum = 19200 ;
         break ;
       case Speed::Speed38400:
-        USARTModule::BRR::Write(26<<4) ;
+      speednum = 38400 ;
         break ;
       default:
         assert(false) ;
         break ;
-    }
-  
-}
+      }
+        uint32_t USARTDIV = ClockSpeed/(speednum*16) ;
+        uint32_t USARTDIVMANT = trunc(USARTDIV) ;
+        uint32_t USARTDIVFRACT = round((USARTDIV - USARTDIVMANT)*16) ;
+        USARTModule::BRR::Write((USARTDIVMANT<<4) & (USARTDIVFRACT));
+  }
 } ;
 
-////USARTDIV = CLK/(BaudRate*8*(2 - OVER8))​
-  //USARTDIV = 8000000/(9600*8*(2-1((OVER8=1)режим дискретизации 1/8)))= 52
-  USART2::BRR::Write(52<<4);
+//USARTDIV = CLK/(BaudRate*8*(2 - OVER8))​
+//USARTDIV = 8000000/(9600*8*(2-1((OVER8=1)режим дискретизации 1/8)))= 52
