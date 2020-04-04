@@ -2376,6 +2376,12 @@
         <file>
             <name>$PROJ_DIR$\AbstractHardware\Pin.hpp</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\USART2.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\AbstractHardware\UsartConfig.hpp</name>
+        </file>
     </group>
     <group>
         <name>Application</name>

@@ -2,7 +2,9 @@
 #include "event.hpp"        // for Event
 #include "rccregisters.hpp" // for RCC
 #include "Pin.hpp" //for gpioa
-std::uint32_t SystemCoreClock = 16'000'000U;
+#include "USART2.hpp" //for usart2
+
+
 
 #include "gpioaregisters.hpp" //for gpioa
 #include "gpiobregisters.hpp" //for gpiob
@@ -10,17 +12,18 @@ std::uint32_t SystemCoreClock = 16'000'000U;
 #include "gpiodregisters.hpp" //for gpiod
 #include "gpioeregisters.hpp" //for gpioe
 #include "gpiohregisters.hpp" //for gpioh
+#include "usart2registers.hpp" //for usart2
 
 
 extern "C" {
 int __low_level_init(void) {
   //Switch on external 16 MHz oscillator
-  RCC::CR::HSION::On::Set();
+  RCC::CR::HSION::On::Set() ;
   while (RCC::CR::HSIRDY::NotReady::IsSet()) {
   }
   
   //Switch system clock on external oscillator
-  RCC::CFGR::SW::Hsi::Set();
+  RCC::CFGR::SW::Hsi::Set() ;
   while (!RCC::CFGR::SWS::Hsi::IsSet()) {
   }
   
@@ -31,28 +34,20 @@ int __low_level_init(void) {
   RCC::AHB1ENR::GPIODEN::Enable::Set() ;
   RCC::AHB1ENR::GPIOEEN::Enable::Set() ;
   RCC::AHB1ENR::GPIOHEN::Enable::Set() ;
+  
+  RCC::APB1ENR::USART2EN::Enable::Set() ;
   return 1;
 }
 }
-
+//terminal skachat
 int main()
 {
-  //using namespace OsWrapper;
-  //Rtos::CreateThread(myTask, "myTask", ThreadPriority::lowest);   //FIXME Чисто для примера
-  //Rtos::Start();
-   //GPIOA::MODER::MODER5::Output::Set() ;
-  Pin<GPIOA,6>  PinA6;
-  PinA6.SetAlternate();
-  Pin<GPIOC,13>  userButton;
-  userButton.SetInput();
-  int status;
-  if (!userButton.IsSet())
-    {
-      status = 5;
-    }
-  else
-  {
-    status = 2;
-  }
-  return 0;
-}
+  USART<USART2, 16000000U> USART2 ;
+  UsartConfig USART2Config ;
+  USART2Config.speed = Speed::Speed9600 ;
+  USART2Config.stopbits = StopBits::OneBit ;
+  USART2Config.bitssize = BitsSize::Bits9 ;
+  USART2Config.parity = Parity::Even ;
+  
+  return 0 ;
+} ;

@@ -1,25 +1,31 @@
 #pragma once
 
-enum class tParity {
-    Odd;
-    Even;
+enum class Parity {
+    Odd ,
+    Even ,
   } ;
 
-enum class tBitsSize {
-    Bits7;
-    Bits8;
-    Bits9;
+enum class BitsSize {
+    Bits8 ,
+    Bits9 ,
   } ;
 
-enum class tStopBits {
-    Bits7;
-    Bits8;
-    Bits9;
+enum class Speed {
+    Speed2400 ,
+    Speed4800 ,
+    Speed9600 ,
+    Speed19200 ,
+    Speed38400 ,
+  } ;
+
+enum class StopBits {
+    OneBit ,
+    TwoBits ,
   } ;
 
 struct UsartConfig {
-  std::uint32_t speed ;
-  tBitsSize bitsSize ;
-  tParity parity ;
-  tStopBits stopbits ;
+  Speed speed ;
+  BitsSize bitssize ;
+  Parity parity ;
+  StopBits stopbits ;
 } ;
