@@ -1,5 +1,10 @@
 #pragma once
 
+enum class SamplingMode {
+    Mode16 ,
+    Mode8 ,
+  } ;
+
 enum class Parity {
     Odd ,
     Even ,
@@ -28,4 +33,5 @@ struct UsartConfig {
   BitsSize bitssize ;
   Parity parity ;
   StopBits stopbits ;
+  SamplingMode samplingmode ;
 } ;

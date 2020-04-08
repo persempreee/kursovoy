@@ -1,78 +1,72 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         04/Apr/2020  13:43:58
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         08/Apr/2020  18:14:49
 # Copyright 1999-2019 IAR Systems AB.
 #
 #    Cpu mode     =  
 #    Endian       =  little
 #    Source file  =
 #        D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Applications\Button\TaskButton.cpp
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Button\TaskButton.cpp
 #    Command line =
-#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW66D4.tmp ("D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Applications\Button\TaskButton.cpp"
-#        -lC "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Debug\List"
-#        -lA "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Debug\List"
-#        -o "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Debug\Obj"
-#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
-#        --no_clustering --no_scheduling --debug --endian=little
-#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW6C83.tmp ("D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Button\TaskButton.cpp"
+#        -lC "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -lA
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -o "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e
+#        --fpu=VFPv4_sp --dlib_config
 #        D:\Programs\IAR\arm\inc\c\DLib_Config_Normal.h -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\" -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\wrapper\" -I
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\FreeRtos\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\" -I
 #        "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\wrapper\FreeRtos\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\" -I
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\include\" -I
 #        "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\include\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\Common\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\portable\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\portable\Common\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\portable\IAR\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
+#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\MyTasks\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Common\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\CMSIS\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\Diagnostic\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\GpioPort\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\IrqController\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
-#        -I "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\MyTasks\" -I
-#        "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Common\" -I
-#        "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\CMSIS\" -I
-#        "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Application\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Application\Diagnostic\"
-#        -I "D:\8 @@@@@@@\poip\@@@@@@\0404my\Kursovoy\AHardware\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\AHardware\GpioPort\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Port\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\AHardware\IrqController\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Port\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\Common\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\..\CortexLib\Common\Singleton\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\AbstractHardware\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\Singleton\"
+#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\"
 #        -Ol --c++ --no_exceptions --no_rtti)
 #    Locale       =  C
 #    List file    =
 #        D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Debug\List\TaskButton.lst
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List\TaskButton.lst
 #    Object file  =
-#        D:\8
-#        @@@@@@@\poip\@@@@@@\0404my\Kursovoy\Debug\Obj\TaskButton.o
+#        D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj\TaskButton.o
 #
 ###############################################################################
 

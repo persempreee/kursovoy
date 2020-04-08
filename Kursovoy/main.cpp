@@ -2,7 +2,7 @@
 #include "event.hpp"        // for Event
 #include "rccregisters.hpp" // for RCC
 #include "Pin.hpp" //for gpioa
-#include "USART2.hpp" //for usart2
+#include "USART.hpp" //for usart
 
 
 
@@ -48,6 +48,7 @@ int main()
   USART2Config.stopbits = StopBits::OneBit ;
   USART2Config.bitssize = BitsSize::Bits9 ;
   USART2Config.parity = Parity::Even ;
+  USART2Config.samplingmode = SamplingMode::Mode8 ;
   
   return 0 ;
 } ;

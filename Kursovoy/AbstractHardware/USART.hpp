@@ -16,6 +16,7 @@ public:
     SetStopBits (config.stopbits) ;
     SetBitsSize (config.bitssize) ;
     SetParity (config.parity) ;
+    SetSamplingMode (config.samplingmode) ;
   }
   
   static void SendData (uint8_t* ptr, size_t size) {
@@ -25,20 +26,21 @@ public:
       ptr++ ;
     }
   }
-  static void SendByte(uint8_t Byte) {
+  
+private:
+    static void SendByte(uint8_t Byte) {
     while (!USARTModule::SR::TXE::DataRegisterEmpty::IsSet()) {
     } ;
     USARTModule::DR::Write(Byte) ;
   }
   
-private:
   static void SetStopBits(StopBits stopbits) {
     switch (stopbits) {
       case StopBits::OneBit:
-        USARTModule::CR2::STOP::Value1::Set() ;
+        USARTModule::CR2::STOP::OneStopBit::Set() ;
         break ; 
       case StopBits::TwoBits:
-        USARTModule::CR2::STOP::Value2::Set() ;
+        USARTModule::CR2::STOP::TwoStopBits::Set() ;
         break ;
       default:
         assert(false) ;
@@ -49,25 +51,43 @@ private:
   static void SetBitsSize(BitsSize bitssize) {   
       switch (bitssize) {
       case BitsSize::Bits8:
-        USARTModule::CR1::M::Value0::Set() ;
+        USARTModule::CR1::M::Data8bits::Set() ;
         break ;
       case BitsSize::Bits9:
-        USARTModule::CR1::M::Value1::Set() ;
+        USARTModule::CR1::M::Data9bits::Set() ;
         break ;
       default:
         assert(false) ;
         break ;
       }
   }
+  
+  static uint32_t over8 ;
+
+    static void SetSamplingMode(SamplingMode samplingmode) {
+      switch (samplingmode) {
+      case SamplingMode::Mode16:
+        USARTModule::CR1::OVER8::OversamplingBy16::Set() ;
+        over8 = 0 ;
+        break ;
+      case SamplingMode::Mode8:
+        USARTModule::CR1::OVER8::OversamplingBy8::Set() ;
+        over8 = 1 ;
+        break ;
+      default:
+        assert(false) ;
+        break ;
+      }
+    }
       
    static void SetParity(Parity parity) {  
-      USARTModule::CR1::PC::Value1::Set() ;
+      USARTModule::CR1::PCE::ParityControlEnable::Set() ;
       switch (parity) {
-      case Parity::Odd:
-        USARTModule::CR1::PCE::Value0::Set() ;
-        break ;
       case Parity::Even:
-        USARTModule::CR1::PCE::Value1::Set() ;
+        USARTModule::CR1::PS::ParityEven::Set() ;
+        break ;
+      case Parity::Odd:
+        USARTModule::CR1::PS::ParityOdd::Set() ;
         break ;
       default:
         assert(false) ;
@@ -96,11 +116,10 @@ private:
       default:
         assert(false) ;
         break ;
-      }
-        uint32_t USARTDIV = ClockSpeed/(speednum*16) ;
-        uint32_t USARTDIVMANT = trunc(USARTDIV) ;
-        uint32_t USARTDIVFRACT = round((USARTDIV - USARTDIVMANT)*16) ;
-        USARTModule::BRR::Write((USARTDIVMANT<<4) & (USARTDIVFRACT));
+      } 
+        uint32_t USARTDIVMANT = ClockSpeed/(speednum*8*(2-over8)) ;
+        uint32_t USARTDIVFRACT = 16 * (ClockSpeed % (speednum*(2*over8)));
+        USARTModule::BRR::Write((USARTDIVMANT<<4) & USARTDIVFRACT) ;  
   }
 } ;
 
