@@ -13,7 +13,10 @@
 #include "gpioeregisters.hpp" //for gpioe
 #include "gpiohregisters.hpp" //for gpioh
 #include "usart2registers.hpp" //for usart2
+#include "susudefs.hpp" //for susuString
 
+using namespace std ;
+constexpr SusuString message(" Hello World!") ;
 
 extern "C" {
 int __low_level_init(void) {
@@ -39,7 +42,7 @@ int __low_level_init(void) {
   return 1;
 }
 }
-//terminal skachat
+
 int main()
 {
   USART<USART2, 16000000U> USART2 ;
@@ -49,6 +52,12 @@ int main()
   USART2Config.bitssize = BitsSize::Bits9 ;
   USART2Config.parity = Parity::Even ;
   USART2Config.samplingmode = SamplingMode::Mode8 ;
+  
+  USART2.Config(USART2Config) ;
+  USART2.On() ;
+  for (;;) {
+    USART2.SendData(message.str, message.size) ;
+  }
   
   return 0 ;
 } ;

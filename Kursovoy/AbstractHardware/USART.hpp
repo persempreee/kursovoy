@@ -1,6 +1,7 @@
 #pragma once
 #include "UsartConfig.hpp" // for UsartConfig, tParity, tBitsSize
 #include <cmath> //for USARTDIV
+#include "usart2registers.hpp"
 
 template <typename USARTModule, uint32_t ClockSpeed>
 class USART {
@@ -19,7 +20,7 @@ public:
     SetSamplingMode (config.samplingmode) ;
   }
   
-  static void SendData (uint8_t* ptr, size_t size) {
+  static void SendData (const char* ptr, size_t size) {
     assert(size > 0);
     for (size_t i = 0; i < size; i++) {
       SendByte(*ptr);
