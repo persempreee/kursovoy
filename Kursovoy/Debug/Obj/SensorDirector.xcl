@@ -1,14 +1,14 @@
-"D:\8 семестр\poip\курсач\1804s\Kursovoy\Applications\Button\TaskButton.cpp"
+"D:\8 семестр\poip\курсач\1804s\Kursovoy\Applications\Sensor\SensorDirector.cpp"
 -std=c++17
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-D:\8 семестр\poip\курсач\1804s\Kursovoy\Debug\Obj\TaskButton.pbi.dep
+D:\8 семестр\poip\курсач\1804s\Kursovoy\Debug\Obj\SensorDirector.pbi.dep
 -o
-TaskButton.pbi
+SensorDirector.pbi
 -I
-D:\8 семестр\poip\курсач\1804s\Kursovoy\Applications\Button
+D:\8 семестр\poip\курсач\1804s\Kursovoy\Applications\Sensor
 -I
 D:\8 семестр\poip\курсач\1804s\Kursovoy\Rtos
 -I

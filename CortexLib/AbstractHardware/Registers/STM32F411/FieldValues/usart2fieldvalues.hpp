@@ -228,10 +228,10 @@ struct USART2_CR2_LINEN_Values: public RegisterField<Reg, offset, size, AccessMo
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct USART2_CR2_STOP_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<USART2_CR2_STOP_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<USART2_CR2_STOP_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<USART2_CR2_STOP_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<USART2_CR2_STOP_Values, BaseType, 3U> ;
+  using OneStopBit = FieldValue<USART2_CR2_STOP_Values, BaseType, 0U> ;
+  using HalfStopBit = FieldValue<USART2_CR2_STOP_Values, BaseType, 1U> ;
+  using TwoStopBits = FieldValue<USART2_CR2_STOP_Values, BaseType, 2U> ;
+  using OneAndHalfStopBits = FieldValue<USART2_CR2_STOP_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 

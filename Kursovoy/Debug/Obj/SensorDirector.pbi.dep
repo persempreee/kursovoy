@@ -1,6 +1,6 @@
-TaskButton.pbi: \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button\TaskButton.cpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/TaskButton.hpp \
+SensorDirector.pbi: \
+  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Sensor\SensorDirector.cpp \
+  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Sensor/SensorDirector.hpp \
   D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\thread.hpp \
   D:\Programs\IAR\arm\inc\cpp\array \
   D:\Programs\IAR\arm\inc\cpp\algorithm \
@@ -81,19 +81,5 @@ TaskButton.pbi: \
   D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\FreeRtos\rtoswrapper.hpp \
   D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\FreeRtos/rtosdefs.hpp \
   D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\eventmode.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/ISubscriber.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\AbstractHardware\Pin\Pin.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/Button.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\fieldvalue.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvaluebase.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/accessmode.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/registerfield.hpp \
-  D:\Programs\IAR\arm\inc\cpp\cassert D:\Programs\IAR\arm\inc\c\assert.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Atomic\atomicutils.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\registerbase.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/registertype.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\register.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvalue.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\accessmode.hpp
+  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button\ISubscriber.hpp \
+  D:\Programs\IAR\arm\inc\cpp\iostream

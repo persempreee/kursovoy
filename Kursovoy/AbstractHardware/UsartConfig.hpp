@@ -8,6 +8,7 @@ enum class SamplingMode {
 enum class Parity {
     Odd ,
     Even ,
+    None ,
   } ;
 
 enum class BitsSize {

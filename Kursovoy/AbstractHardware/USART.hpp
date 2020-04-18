@@ -7,17 +7,17 @@ template <typename USARTModule, uint32_t ClockSpeed>
 class USART {
 public:  
   static void On() {
-    USARTModule::CR1::UE::Enable::Set() ; //включение USART2
-    USARTModule::CR1::TE::Enable::Set() ; //включение передачи
+    USARTModule::CR1::UE::Enable::Set() ; //????????? USART2
+    USARTModule::CR1::TE::Enable::Set() ; //????????? ????????
     
   }
 
   static void Config(UsartConfig config) {
+    SetSamplingMode (config.samplingmode) ;
     SetSpeed (config.speed) ;  
     SetStopBits (config.stopbits) ;
     SetBitsSize (config.bitssize) ;
     SetParity (config.parity) ;
-    SetSamplingMode (config.samplingmode) ;
   }
   
   static void SendData (const char* ptr, size_t size) {
@@ -63,7 +63,7 @@ private:
       }
   }
   
-  static uint32_t over8 ;
+  inline static uint32_t over8 = 0 ;
 
     static void SetSamplingMode(SamplingMode samplingmode) {
       switch (samplingmode) {
@@ -82,13 +82,17 @@ private:
     }
       
    static void SetParity(Parity parity) {  
-      USARTModule::CR1::PCE::ParityControlEnable::Set() ;
       switch (parity) {
       case Parity::Even:
+        USARTModule::CR1::PCE::ParityControlEnable::Set() ;
         USARTModule::CR1::PS::ParityEven::Set() ;
         break ;
       case Parity::Odd:
+        USARTModule::CR1::PCE::ParityControlEnable::Set() ;
         USARTModule::CR1::PS::ParityOdd::Set() ;
+        break ;
+      case Parity::None:
+        USARTModule::CR1::PCE::ParityControlDisable::Set() ;
         break ;
       default:
         assert(false) ;
@@ -117,12 +121,10 @@ private:
       default:
         assert(false) ;
         break ;
-      } 
-        uint32_t USARTDIVMANT = ClockSpeed/(speednum*8*(2-over8)) ;
-        uint32_t USARTDIVFRACT = 16 * (ClockSpeed % (speednum*(2*over8)));
-        USARTModule::BRR::Write((USARTDIVMANT<<4) & USARTDIVFRACT) ;  
+      }      
+      // 208 = 16000000/ (9600*8*(2-1)) ;
+       uint32_t USARTDIVMANT = ClockSpeed/(speednum*8*(2-over8)) ;
+       uint32_t USARTDIVFRACT = 16 * (ClockSpeed % (speednum*8*(2-over8)))/(speednum*8*(2-over8));
+       USARTModule::BRR::Write((USARTDIVMANT<<4) | USARTDIVFRACT) ;  
   }
 } ;
-
-//USARTDIV = CLK/(BaudRate*8*(2 - OVER8))​
-//USARTDIV = 8000000/(9600*8*(2-1((OVER8=1)режим дискретизации 1/8)))= 52

@@ -71,7 +71,7 @@ struct SPI2_CR1_SSI_Values: public RegisterField<Reg, offset, size, AccessMode>
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct SPI2_CR1_LSBFIRST_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using MsbFisrt = FieldValue<SPI2_CR1_LSBFIRST_Values, BaseType, 0U> ;
+  using MsbFirst = FieldValue<SPI2_CR1_LSBFIRST_Values, BaseType, 0U> ;
   using LsbFirst = FieldValue<SPI2_CR1_LSBFIRST_Values, BaseType, 1U> ;
 } ;
 

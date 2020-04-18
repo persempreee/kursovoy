@@ -1,0 +1,1291 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         18/Apr/2020  10:52:59
+# Copyright 1999-2019 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =
+#        D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\SensorDirector.cpp
+#    Command line =
+#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW6AF8.tmp ("D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\SensorDirector.cpp"
+#        -lC "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
+#        -lA "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
+#        -o "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        D:\Programs\IAR\arm\inc\c\DLib_Config_Normal.h -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\" -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\FreeRtos\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\include\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\Common\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\MyTasks\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1104ira\KURS-master\Kursovoy\Common\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\CMSIS\" -I
+#        "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\Diagnostic\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\GpioPort\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\IrqController\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Port\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\Singleton\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\SPI\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\Pin\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\" -I
+#        "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\Driver\"
+#        -Ol --c++ --no_exceptions --no_rtti)
+#    Locale       =  C
+#    List file    =
+#        D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List\SensorDirector.lst
+#    Object file  =
+#        D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\Obj\SensorDirector.o
+#
+###############################################################################
+
+D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\SensorDirector.cpp
+      1          //SensorDirector.cpp
+Warning[Ms014]: some characters could not be correctly encoded in "D:\8
+          @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List\SensorDirector.s", and
+          have been replaced with '@'. The first such character has unicode
+          code point 0x441 ("@")
+      2          
+      3          #include "SensorDirector.hpp" 
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp size_t std::char_traits<char>::length(char const *)
+   \                     _ZNSt11char_traitsIcE6lengthEPKc: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x7801             LDRB     R1,[R0, #+0]
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD101             BNE.N    ??length_0
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xE001             B.N      ??length_1
+   \                     ??length_0: (+1)
+   \        0xC   0x....'....        BL       strlen
+   \                     ??length_1: (+1)
+   \       0x10   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::char_traits<char>::to_int_type(char const &)
+   \                     _ZNSt11char_traitsIcE11to_int_typeERKc: (+1)
+   \        0x0   0x7800             LDRB     R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool std::char_traits<char>::eq_int_type(int const &, int const &)
+   \                     _ZNSt11char_traitsIcE11eq_int_typeERKiS2_: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4288             CMP      R0,R1
+   \        0x6   0xD101             BNE.N    ??eq_int_type_0
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0xE000             B.N      ??eq_int_type_1
+   \                     ??eq_int_type_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \                     ??eq_int_type_1: (+1)
+   \        0xE   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \       0x10   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::_Wrap_facet<std::ios::_Ctype>::deleter ~_Wrap_facet()
+   \                     _ZNSt11_Wrap_facetISt5ctypeIcEED0Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZNSt11_Wrap_facetISt5ctypeIcEED1Ev
+   \        0xA   0x2104             MOVS     R1,#+4
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       _ZdlPvj
+   \       0x12   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::_Wrap_facet<std::ios::_Ctype>::~_Wrap_facet()
+   \                     _ZNSt11_Wrap_facetISt5ctypeIcEED1Ev: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4
+   \   __code __interwork __vfp std::_Wrap_facet<std::ios::_Ctype>::_Wrap_facet()
+   \                     _ZNSt11_Wrap_facetISt5ctypeIcEEC1Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZNSt5ctypeIcEC2Ev
+   \        0xA   0x4802             LDR.N    R0,??_Wrap_facet_0
+   \        0xC   0x6020             STR      R0,[R4, #+0]
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0xBD10             POP      {R4,PC}          ;; return
+   \       0x12   0xBF00             Nop      
+   \                     ??_Wrap_facet_0:
+   \       0x14   0x....'....        DC32     _ZTVSt11_Wrap_facetISt5ctypeIcEE+0x8
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp std::ios::_Ctype const &std::use_facet<std::ios::_Ctype>()
+   \                     _ZSt9use_facetISt5ctypeIcEERKT_v: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x4905             LDR.N    R1,??use_facet_0
+   \        0x4   0x7808             LDRB     R0,[R1, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD104             BNE.N    ??use_facet_1
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x7008             STRB     R0,[R1, #+0]
+   \        0xE   0x4803             LDR.N    R0,??use_facet_0+0x4
+   \       0x10   0x....'....        BL       _ZNSt11_Wrap_facetISt5ctypeIcEEC1Ev
+   \                     ??use_facet_1: (+1)
+   \       0x14   0x4801             LDR.N    R0,??use_facet_0+0x4
+   \       0x16   0xBD02             POP      {R1,PC}          ;; return
+   \                     ??use_facet_0:
+   \       0x18   0x....'....        DC32     _ZGVZSt9use_facetISt5ctypeIcEERKT_vE8_MyFacet
+   \       0x1C   0x....'....        DC32     _ZZSt9use_facetISt5ctypeIcEERKT_vE8_MyFacet
+
+   \                                 In section .bss, align 4
+   \   __absolute std::_Wrap_facet<std::ios::_Ctype> _MyFacet
+   \                     _ZZSt9use_facetISt5ctypeIcEERKT_vE8_MyFacet:
+   \        0x0                      DS8 4
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char std::ctype<char>::widen(char) const
+   \                     _ZNKSt5ctypeIcE5widenEc: (+1)
+   \        0x0   0x0008             MOVS     R0,R1
+   \        0x2   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ctype<char>::subobject ctype()
+   \                     _ZNSt5ctypeIcEC2Ev: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNSt5ctypeIcEC1Ev
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 4
+   \   __code __interwork __vfp std::ctype<char>::ctype()
+   \                     _ZNSt5ctypeIcEC1Ev: (+1)
+   \        0x0   0x4901             LDR.N    R1,??ctype_0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??ctype_0:
+   \        0x8   0x....'....        DC32     _ZTVSt5ctypeIcE+0x8
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ctype<char>::~ctype()
+   \                     _ZNSt5ctypeIcED1Ev: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ctype<char>::deleter ~ctype()
+   \                     _ZNSt5ctypeIcED0Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZNSt5ctypeIcED1Ev
+   \        0xA   0x2104             MOVS     R1,#+4
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       _ZdlPvj
+   \       0x12   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ios_base::iostate std::ios_base::rdstate() const
+   \                     _ZNKSt8ios_base7rdstateEv: (+1)
+   \        0x0   0x7A00             LDRB     R0,[R0, #+8]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool std::ios_base::good() const
+   \                     _ZNKSt8ios_base4goodEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNKSt8ios_base7rdstateEv
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??good_0
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0xE000             B.N      ??good_1
+   \                     ??good_0: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \                     ??good_1: (+1)
+   \       0x10   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \       0x12   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ios_base::fmtflags std::ios_base::flags() const
+   \                     _ZNKSt8ios_base5flagsEv: (+1)
+   \        0x0   0x8940             LDRH     R0,[R0, #+10]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::ios_base::width() const
+   \                     _ZNKSt8ios_base5widthEv: (+1)
+   \        0x0   0x6900             LDR      R0,[R0, #+16]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::ios_base::width(int)
+   \                     _ZNSt8ios_base5widthEi: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+   \        0x2   0x6910             LDR      R0,[R2, #+16]
+   \        0x4   0x6111             STR      R1,[R2, #+16]
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ios_base::fmtflags std::operator&(std::ios_base::fmtflags, std::ios_base::fmtflags)
+   \                     _ZStanNSt5_IosbIiE9_FmtflagsES1_: (+1)
+   \        0x0   0x4008             ANDS     R0,R1,R0
+   \        0x2   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ios_base::iostate &std::operator|=(std::ios_base::iostate &, std::ios_base::iostate)
+   \                     _ZStoRRNSt5_IosbIiE8_IostateES1_: (+1)
+   \        0x0   0x7802             LDRB     R2,[R0, #+0]
+   \        0x2   0x4311             ORRS     R1,R1,R2
+   \        0x4   0x7001             STRB     R1,[R0, #+0]
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::streambuf::pubsync()
+   \                     _ZNSt15basic_streambufIcSt11char_traitsIcEE7pubsyncEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x6B89             LDR      R1,[R1, #+56]
+   \        0x6   0x4788             BLX      R1
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::streambuf::sputc(char)
+   \                     _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputcEc: (+1)
+   \        0x0   0xB513             PUSH     {R0,R1,R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZNKSt15basic_streambufIcSt11char_traitsIcEE8_PnavailEv
+   \        0xA   0x2801             CMP      R0,#+1
+   \        0xC   0xDB08             BLT.N    ??sputc_0
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE6_PnincEv
+   \       0x14   0xF89D 0x1004      LDRB     R1,[SP, #+4]
+   \       0x18   0x7001             STRB     R1,[R0, #+0]
+   \       0x1A   0x....'....        BL       _ZNSt11char_traitsIcE11to_int_typeERKc
+   \       0x1E   0xE007             B.N      ??sputc_1
+   \                     ??sputc_0: (+1)
+   \       0x20   0xA801             ADD      R0,SP,#+4
+   \       0x22   0x....'....        BL       _ZNSt11char_traitsIcE11to_int_typeERKc
+   \       0x26   0x0001             MOVS     R1,R0
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x6822             LDR      R2,[R4, #+0]
+   \       0x2C   0x6912             LDR      R2,[R2, #+16]
+   \       0x2E   0x4790             BLX      R2
+   \                     ??sputc_1: (+1)
+   \       0x30   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::streambuf::sputn(char const *, int)
+   \                     _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputnEPKci: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x6803             LDR      R3,[R0, #+0]
+   \        0x4   0x6A9B             LDR      R3,[R3, #+40]
+   \        0x6   0x4798             BLX      R3
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char *std::streambuf::_Pninc()
+   \                     _ZNSt15basic_streambufIcSt11char_traitsIcEE6_PnincEv: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x6A08             LDR      R0,[R1, #+32]
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x1C42             ADDS     R2,R0,#+1
+   \        0x8   0x6A09             LDR      R1,[R1, #+32]
+   \        0xA   0x600A             STR      R2,[R1, #+0]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp int std::streambuf::_Pnavail() const
+   \                     _ZNKSt15basic_streambufIcSt11char_traitsIcEE8_PnavailEv: (+1)
+   \        0x0   0x6A01             LDR      R1,[R0, #+32]
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD005             BEQ.N    ??_Pnavail_0
+   \        0x8   0x6B01             LDR      R1,[R0, #+48]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x6A00             LDR      R0,[R0, #+32]
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+   \       0x10   0x1A08             SUBS     R0,R1,R0
+   \       0x12   0xE000             B.N      ??_Pnavail_1
+   \                     ??_Pnavail_0: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??_Pnavail_1: (+1)
+   \       0x16   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void std::ios::clear(std::ios_base::iostate, bool)
+   \                     _ZNSt9basic_iosIcSt11char_traitsIcEE5clearENSt5_IosbIiE8_IostateEb: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x69C3             LDR      R3,[R0, #+28]
+   \        0x4   0x2B00             CMP      R3,#+0
+   \        0x6   0xD102             BNE.N    ??clear_0
+   \        0x8   0xF051 0x0104      ORRS     R1,R1,#0x4
+   \        0xC   0xE7FF             B.N      ??clear_1
+   \                     ??clear_0: (+1)
+   \                     ??clear_1: (+1)
+   \        0xE   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \       0x10   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \       0x12   0x....'....        BL       _ZNSt8ios_base5clearENSt5_IosbIiE8_IostateEb
+   \       0x16   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void std::ios::setstate(std::ios_base::iostate, bool)
+   \                     _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateENSt5_IosbIiE8_IostateEb: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD00A             BEQ.N    ??setstate_0
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x....'....        BL       _ZNKSt8ios_base7rdstateEv
+   \       0x16   0x0032             MOVS     R2,R6
+   \       0x18   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \       0x1A   0x4305             ORRS     R5,R5,R0
+   \       0x1C   0x0029             MOVS     R1,R5
+   \       0x1E   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x....'....        BL       _ZNSt9basic_iosIcSt11char_traitsIcEE5clearENSt5_IosbIiE8_IostateEb
+   \                     ??setstate_0: (+1)
+   \       0x26   0xBD70             POP      {R4-R6,PC}       ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream *std::ios::tie() const
+   \                     _ZNKSt9basic_iosIcSt11char_traitsIcEE3tieEv: (+1)
+   \        0x0   0x6A00             LDR      R0,[R0, #+32]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::streambuf *std::ios::rdbuf() const
+   \                     _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char std::ios::fill() const
+   \                     _ZNKSt9basic_iosIcSt11char_traitsIcEE4fillEv: (+1)
+   \        0x0   0xF890 0x0024      LDRB     R0,[R0, #+36]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp char std::ios::widen(char) const
+   \                     _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x000C             MOVS     R4,R1
+   \        0x4   0x....'....        BL       _ZSt9use_facetISt5ctypeIcEERKT_v
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \        0xC   0x....'....        BL       _ZNKSt5ctypeIcE5widenEc
+   \       0x10   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Sentry_base::subobject _Sentry_base(std::ostream &)
+   \                     _ZNSo12_Sentry_baseC2ERSo: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNSo12_Sentry_baseC1ERSo
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Sentry_base::_Sentry_base(std::ostream &)
+   \                     _ZNSo12_Sentry_baseC1ERSo: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x6021             STR      R1,[R4, #+0]
+   \        0x6   0x6820             LDR      R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD006             BEQ.N    ??_Sentry_base_0
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x6821             LDR      R1,[R4, #+0]
+   \       0x10   0x6809             LDR      R1,[R1, #+0]
+   \       0x12   0xF851 0x1C0C      LDR      R1,[R1, #-12]
+   \       0x16   0x4408             ADD      R0,R0,R1
+   \       0x18   0xE000             B.N      ??_Sentry_base_1
+   \                     ??_Sentry_base_0: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \                     ??_Sentry_base_1: (+1)
+   \       0x1C   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD00F             BEQ.N    ??_Sentry_base_2
+   \       0x24   0x6820             LDR      R0,[R4, #+0]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD006             BEQ.N    ??_Sentry_base_3
+   \       0x2A   0x6820             LDR      R0,[R4, #+0]
+   \       0x2C   0x6821             LDR      R1,[R4, #+0]
+   \       0x2E   0x6809             LDR      R1,[R1, #+0]
+   \       0x30   0xF851 0x1C0C      LDR      R1,[R1, #-12]
+   \       0x34   0x4408             ADD      R0,R0,R1
+   \       0x36   0xE000             B.N      ??_Sentry_base_4
+   \                     ??_Sentry_base_3: (+1)
+   \       0x38   0x2000             MOVS     R0,#+0
+   \                     ??_Sentry_base_4: (+1)
+   \       0x3A   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x3E   0x6801             LDR      R1,[R0, #+0]
+   \       0x40   0x6889             LDR      R1,[R1, #+8]
+   \       0x42   0x4788             BLX      R1
+   \                     ??_Sentry_base_2: (+1)
+   \       0x44   0x0020             MOVS     R0,R4
+   \       0x46   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Sentry_base::subobject ~_Sentry_base()
+   \                     _ZNSo12_Sentry_baseD2Ev: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNSo12_Sentry_baseD1Ev
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Sentry_base::~_Sentry_base()
+   \                     _ZNSo12_Sentry_baseD1Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD006             BEQ.N    `?~_Sentry_base_0`
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x6809             LDR      R1,[R1, #+0]
+   \       0x10   0xF851 0x1C0C      LDR      R1,[R1, #-12]
+   \       0x14   0x4408             ADD      R0,R0,R1
+   \       0x16   0xE000             B.N      `?~_Sentry_base_1`
+   \                     `?~_Sentry_base_0`: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     `?~_Sentry_base_1`: (+1)
+   \       0x1A   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD00F             BEQ.N    `?~_Sentry_base_2`
+   \       0x22   0x6820             LDR      R0,[R4, #+0]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD006             BEQ.N    `?~_Sentry_base_3`
+   \       0x28   0x6820             LDR      R0,[R4, #+0]
+   \       0x2A   0x6821             LDR      R1,[R4, #+0]
+   \       0x2C   0x6809             LDR      R1,[R1, #+0]
+   \       0x2E   0xF851 0x1C0C      LDR      R1,[R1, #-12]
+   \       0x32   0x4408             ADD      R0,R0,R1
+   \       0x34   0xE000             B.N      `?~_Sentry_base_4`
+   \                     `?~_Sentry_base_3`: (+1)
+   \       0x36   0x2000             MOVS     R0,#+0
+   \                     `?~_Sentry_base_4`: (+1)
+   \       0x38   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x3C   0x6801             LDR      R1,[R0, #+0]
+   \       0x3E   0x68C9             LDR      R1,[R1, #+12]
+   \       0x40   0x4788             BLX      R1
+   \                     `?~_Sentry_base_2`: (+1)
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Flush_sentry::subobject _Flush_sentry(std::ostream &)
+   \                     _ZNSo13_Flush_sentryC2ERSo: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNSo13_Flush_sentryC1ERSo
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Flush_sentry::_Flush_sentry(std::ostream &)
+   \                     _ZNSo13_Flush_sentryC1ERSo: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       _ZNSo12_Sentry_baseC2ERSo
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD004             BEQ.N    ??_Flush_sentry_0
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x18   0x4420             ADD      R0,R4,R0
+   \       0x1A   0xE000             B.N      ??_Flush_sentry_1
+   \                     ??_Flush_sentry_0: (+1)
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \                     ??_Flush_sentry_1: (+1)
+   \       0x1E   0x....'....        BL       _ZNKSt8ios_base4goodEv
+   \       0x22   0x7128             STRB     R0,[R5, #+4]
+   \       0x24   0x0028             MOVS     R0,R5
+   \       0x26   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Flush_sentry::subobject ~_Flush_sentry()
+   \                     _ZNSo13_Flush_sentryD2Ev: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZNSo13_Flush_sentryD1Ev
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Flush_sentry::~_Flush_sentry()
+   \                     _ZNSo13_Flush_sentryD1Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0x....'....        BL       _ZNSo5_OsfxEv
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x....'....        BL       _ZNSo12_Sentry_baseD2Ev
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::_Flush_sentry::operator bool() const
+   \                     _ZNKSo13_Flush_sentrycvbEv: (+1)
+   \        0x0   0x7900             LDRB     R0,[R0, #+4]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::sentry::~sentry()
+   \                     _ZNSo6sentryD1Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZNSo13_Flush_sentryD2Ev
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::ostream::sentry::sentry(std::ostream &)
+   \                     _ZNSo6sentryC1ERSo: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       _ZNSo13_Flush_sentryC2ERSo
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD004             BEQ.N    ??sentry_0
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x18   0x4420             ADD      R0,R4,R0
+   \       0x1A   0xE000             B.N      ??sentry_1
+   \                     ??sentry_0: (+1)
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \                     ??sentry_1: (+1)
+   \       0x1E   0x....'....        BL       _ZNKSt8ios_base4goodEv
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD023             BEQ.N    ??sentry_2
+   \       0x26   0x2C00             CMP      R4,#+0
+   \       0x28   0xD004             BEQ.N    ??sentry_3
+   \       0x2A   0x6820             LDR      R0,[R4, #+0]
+   \       0x2C   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x30   0x4420             ADD      R0,R4,R0
+   \       0x32   0xE000             B.N      ??sentry_4
+   \                     ??sentry_3: (+1)
+   \       0x34   0x2000             MOVS     R0,#+0
+   \                     ??sentry_4: (+1)
+   \       0x36   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE3tieEv
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD017             BEQ.N    ??sentry_2
+   \       0x3E   0x2C00             CMP      R4,#+0
+   \       0x40   0xD004             BEQ.N    ??sentry_5
+   \       0x42   0x6820             LDR      R0,[R4, #+0]
+   \       0x44   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x48   0x4420             ADD      R0,R4,R0
+   \       0x4A   0xE000             B.N      ??sentry_6
+   \                     ??sentry_5: (+1)
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \                     ??sentry_6: (+1)
+   \       0x4E   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE3tieEv
+   \       0x52   0x42A0             CMP      R0,R4
+   \       0x54   0xD00B             BEQ.N    ??sentry_2
+   \       0x56   0x2C00             CMP      R4,#+0
+   \       0x58   0xD004             BEQ.N    ??sentry_7
+   \       0x5A   0x6820             LDR      R0,[R4, #+0]
+   \       0x5C   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x60   0x4420             ADD      R0,R4,R0
+   \       0x62   0xE000             B.N      ??sentry_8
+   \                     ??sentry_7: (+1)
+   \       0x64   0x2000             MOVS     R0,#+0
+   \                     ??sentry_8: (+1)
+   \       0x66   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE3tieEv
+   \       0x6A   0x....'....        BL       _ZNSo5flushEv
+   \                     ??sentry_2: (+1)
+   \       0x6E   0x0028             MOVS     R0,R5
+   \       0x70   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void std::ostream::_Osfx()
+   \                     _ZNSo5_OsfxEv: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \        0xA   0x4420             ADD      R0,R4,R0
+   \        0xC   0x....'....        BL       _ZNKSt8ios_base4goodEv
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD01E             BEQ.N    ??_Osfx_0
+   \       0x14   0x6820             LDR      R0,[R4, #+0]
+   \       0x16   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x1A   0x4420             ADD      R0,R4,R0
+   \       0x1C   0x....'....        BL       _ZNKSt8ios_base5flagsEv
+   \       0x20   0x2102             MOVS     R1,#+2
+   \       0x22   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \       0x24   0x....'....        BL       _ZStanNSt5_IosbIiE9_FmtflagsES1_
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD012             BEQ.N    ??_Osfx_0
+   \       0x2C   0x6820             LDR      R0,[R4, #+0]
+   \       0x2E   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x32   0x4420             ADD      R0,R4,R0
+   \       0x34   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x38   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE7pubsyncEv
+   \       0x3C   0xF110 0x0F01      CMN      R0,#+1
+   \       0x40   0xD107             BNE.N    ??_Osfx_0
+   \       0x42   0x2200             MOVS     R2,#+0
+   \       0x44   0x2104             MOVS     R1,#+4
+   \       0x46   0x6820             LDR      R0,[R4, #+0]
+   \       0x48   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x4C   0x4420             ADD      R0,R4,R0
+   \       0x4E   0x....'....        BL       _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateENSt5_IosbIiE8_IostateEb
+   \                     ??_Osfx_0: (+1)
+   \       0x52   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream &std::ostream::operator<<(std::ostream &(*)(std::ostream &))
+   \                     _ZNSolsEPFRSoS_E: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x4788             BLX      R1
+   \        0x4   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream &std::ostream::put(char)
+   \                     _ZNSo3putEc: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0xA803             ADD      R0,SP,#+12
+   \       0x12   0x....'....        BL       _ZNSo6sentryC1ERSo
+   \       0x16   0x....'....        BL       _ZNKSo13_Flush_sentrycvbEv
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD104             BNE.N    ??put_0
+   \       0x1E   0x2104             MOVS     R1,#+4
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \       0x26   0xE017             B.N      ??put_1
+   \                     ??put_0: (+1)
+   \       0x28   0xF05F 0x30FF      MOVS     R0,#-1
+   \       0x2C   0x9002             STR      R0,[SP, #+8]
+   \       0x2E   0x6820             LDR      R0,[R4, #+0]
+   \       0x30   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x34   0x4420             ADD      R0,R4,R0
+   \       0x36   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x3A   0x0029             MOVS     R1,R5
+   \       0x3C   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \       0x3E   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputcEc
+   \       0x42   0x9001             STR      R0,[SP, #+4]
+   \       0x44   0xA901             ADD      R1,SP,#+4
+   \       0x46   0xA802             ADD      R0,SP,#+8
+   \       0x48   0x....'....        BL       _ZNSt11char_traitsIcE11eq_int_typeERKiS2_
+   \       0x4C   0x2800             CMP      R0,#+0
+   \       0x4E   0xD003             BEQ.N    ??put_1
+   \       0x50   0x2104             MOVS     R1,#+4
+   \       0x52   0x4668             MOV      R0,SP
+   \       0x54   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \                     ??put_1: (+1)
+   \       0x58   0x2200             MOVS     R2,#+0
+   \       0x5A   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x5E   0x6820             LDR      R0,[R4, #+0]
+   \       0x60   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x64   0x4420             ADD      R0,R4,R0
+   \       0x66   0x....'....        BL       _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateENSt5_IosbIiE8_IostateEb
+   \       0x6A   0xA803             ADD      R0,SP,#+12
+   \       0x6C   0x....'....        BL       _ZNSo6sentryD1Ev
+   \       0x70   0x0020             MOVS     R0,R4
+   \       0x72   0xB005             ADD      SP,SP,#+20
+   \       0x74   0xBD30             POP      {R4,R5,PC}       ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream &std::ostream::flush()
+   \                     _ZNSo5flushEv: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \        0xA   0x4420             ADD      R0,R4,R0
+   \        0xC   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD01D             BEQ.N    ??flush_0
+   \       0x14   0x0021             MOVS     R1,R4
+   \       0x16   0x4668             MOV      R0,SP
+   \       0x18   0x....'....        BL       _ZNSo13_Flush_sentryC1ERSo
+   \       0x1C   0x....'....        BL       _ZNKSo13_Flush_sentrycvbEv
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD012             BEQ.N    ??flush_1
+   \       0x24   0x6820             LDR      R0,[R4, #+0]
+   \       0x26   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x2A   0x4420             ADD      R0,R4,R0
+   \       0x2C   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0x30   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE7pubsyncEv
+   \       0x34   0xF110 0x0F01      CMN      R0,#+1
+   \       0x38   0xD107             BNE.N    ??flush_1
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \       0x3C   0x2104             MOVS     R1,#+4
+   \       0x3E   0x6820             LDR      R0,[R4, #+0]
+   \       0x40   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x44   0x4420             ADD      R0,R4,R0
+   \       0x46   0x....'....        BL       _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateENSt5_IosbIiE8_IostateEb
+   \                     ??flush_1: (+1)
+   \       0x4A   0x4668             MOV      R0,SP
+   \       0x4C   0x....'....        BL       _ZNSo13_Flush_sentryD1Ev
+   \                     ??flush_0: (+1)
+   \       0x50   0x0020             MOVS     R0,R4
+   \       0x52   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream &std::operator<<<std::char_traits<char>>(std::ostream &, char const *)
+   \                     _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x....'....        BL       _ZNSt11char_traitsIcE6lengthEPKc
+   \       0x16   0x0007             MOVS     R7,R0
+   \       0x18   0x2C00             CMP      R4,#+0
+   \       0x1A   0xD004             BEQ.N    `??operator<<_0`
+   \       0x1C   0x6820             LDR      R0,[R4, #+0]
+   \       0x1E   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x22   0x4420             ADD      R0,R4,R0
+   \       0x24   0xE000             B.N      `??operator<<_1`
+   \                     `??operator<<_0`: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_1`: (+1)
+   \       0x28   0x....'....        BL       _ZNKSt8ios_base5widthEv
+   \       0x2C   0x2801             CMP      R0,#+1
+   \       0x2E   0xDB0B             BLT.N    `??operator<<_2`
+   \       0x30   0x2C00             CMP      R4,#+0
+   \       0x32   0xD004             BEQ.N    `??operator<<_3`
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x3A   0x4420             ADD      R0,R4,R0
+   \       0x3C   0xE000             B.N      `??operator<<_4`
+   \                     `??operator<<_3`: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_4`: (+1)
+   \       0x40   0x....'....        BL       _ZNKSt8ios_base5widthEv
+   \       0x44   0x4287             CMP      R7,R0
+   \       0x46   0xDB01             BLT.N    `??operator<<_5`
+   \                     `??operator<<_2`: (+1)
+   \       0x48   0x2500             MOVS     R5,#+0
+   \       0x4A   0xE00B             B.N      `??operator<<_6`
+   \                     `??operator<<_5`: (+1)
+   \       0x4C   0x2C00             CMP      R4,#+0
+   \       0x4E   0xD004             BEQ.N    `??operator<<_7`
+   \       0x50   0x6820             LDR      R0,[R4, #+0]
+   \       0x52   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x56   0x4420             ADD      R0,R4,R0
+   \       0x58   0xE000             B.N      `??operator<<_8`
+   \                     `??operator<<_7`: (+1)
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_8`: (+1)
+   \       0x5C   0x....'....        BL       _ZNKSt8ios_base5widthEv
+   \       0x60   0x0005             MOVS     R5,R0
+   \       0x62   0x1BED             SUBS     R5,R5,R7
+   \                     `??operator<<_6`: (+1)
+   \       0x64   0x0021             MOVS     R1,R4
+   \       0x66   0xA805             ADD      R0,SP,#+20
+   \       0x68   0x....'....        BL       _ZNSo6sentryC1ERSo
+   \       0x6C   0x....'....        BL       _ZNKSo13_Flush_sentrycvbEv
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD104             BNE.N    `??operator<<_9`
+   \       0x74   0x2104             MOVS     R1,#+4
+   \       0x76   0x4668             MOV      R0,SP
+   \       0x78   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \       0x7C   0xE089             B.N      `??operator<<_10`
+   \                     `??operator<<_9`: (+1)
+   \       0x7E   0x2C00             CMP      R4,#+0
+   \       0x80   0xD004             BEQ.N    `??operator<<_11`
+   \       0x82   0x6820             LDR      R0,[R4, #+0]
+   \       0x84   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0x88   0x4420             ADD      R0,R4,R0
+   \       0x8A   0xE000             B.N      `??operator<<_12`
+   \                     `??operator<<_11`: (+1)
+   \       0x8C   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_12`: (+1)
+   \       0x8E   0x....'....        BL       _ZNKSt8ios_base5flagsEv
+   \       0x92   0xF44F 0x71E0      MOV      R1,#+448
+   \       0x96   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \       0x98   0x....'....        BL       _ZStanNSt5_IosbIiE9_FmtflagsES1_
+   \       0x9C   0x2840             CMP      R0,#+64
+   \       0x9E   0xD101             BNE.N    `??operator<<_13`
+   \       0xA0   0xE029             B.N      `??operator<<_14`
+   \                     `??operator<<_15`: (+1)
+   \       0xA2   0x1E6D             SUBS     R5,R5,#+1
+   \                     `??operator<<_13`: (+1)
+   \       0xA4   0x2D01             CMP      R5,#+1
+   \       0xA6   0xDB26             BLT.N    `??operator<<_14`
+   \       0xA8   0xF05F 0x30FF      MOVS     R0,#-1
+   \       0xAC   0x9004             STR      R0,[SP, #+16]
+   \       0xAE   0x2C00             CMP      R4,#+0
+   \       0xB0   0xD004             BEQ.N    `??operator<<_16`
+   \       0xB2   0x6820             LDR      R0,[R4, #+0]
+   \       0xB4   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0xB8   0x4420             ADD      R0,R4,R0
+   \       0xBA   0xE000             B.N      `??operator<<_17`
+   \                     `??operator<<_16`: (+1)
+   \       0xBC   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_17`: (+1)
+   \       0xBE   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE4fillEv
+   \       0xC2   0x4680             MOV      R8,R0
+   \       0xC4   0x2C00             CMP      R4,#+0
+   \       0xC6   0xD004             BEQ.N    `??operator<<_18`
+   \       0xC8   0x6820             LDR      R0,[R4, #+0]
+   \       0xCA   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \       0xCE   0x4420             ADD      R0,R4,R0
+   \       0xD0   0xE000             B.N      `??operator<<_19`
+   \                     `??operator<<_18`: (+1)
+   \       0xD2   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_19`: (+1)
+   \       0xD4   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \       0xD8   0x4641             MOV      R1,R8
+   \       0xDA   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \       0xDC   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputcEc
+   \       0xE0   0x9003             STR      R0,[SP, #+12]
+   \       0xE2   0xA903             ADD      R1,SP,#+12
+   \       0xE4   0xA804             ADD      R0,SP,#+16
+   \       0xE6   0x....'....        BL       _ZNSt11char_traitsIcE11eq_int_typeERKiS2_
+   \       0xEA   0x2800             CMP      R0,#+0
+   \       0xEC   0xD0D9             BEQ.N    `??operator<<_15`
+   \       0xEE   0x2104             MOVS     R1,#+4
+   \       0xF0   0x4668             MOV      R0,SP
+   \       0xF2   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \                     `??operator<<_14`: (+1)
+   \       0xF6   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0xFA   0x2800             CMP      R0,#+0
+   \       0xFC   0xD113             BNE.N    `??operator<<_20`
+   \       0xFE   0x2C00             CMP      R4,#+0
+   \      0x100   0xD004             BEQ.N    `??operator<<_21`
+   \      0x102   0x6820             LDR      R0,[R4, #+0]
+   \      0x104   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \      0x108   0x4420             ADD      R0,R4,R0
+   \      0x10A   0xE000             B.N      `??operator<<_22`
+   \                     `??operator<<_21`: (+1)
+   \      0x10C   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_22`: (+1)
+   \      0x10E   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \      0x112   0x003A             MOVS     R2,R7
+   \      0x114   0x0031             MOVS     R1,R6
+   \      0x116   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputnEPKci
+   \      0x11A   0x42B8             CMP      R0,R7
+   \      0x11C   0xD003             BEQ.N    `??operator<<_20`
+   \      0x11E   0x2104             MOVS     R1,#+4
+   \      0x120   0x4668             MOV      R0,SP
+   \      0x122   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \                     `??operator<<_20`: (+1)
+   \      0x126   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x12A   0x2800             CMP      R0,#+0
+   \      0x12C   0xD12A             BNE.N    `??operator<<_23`
+   \      0x12E   0xE000             B.N      `??operator<<_24`
+   \                     `??operator<<_25`: (+1)
+   \      0x130   0x1E6D             SUBS     R5,R5,#+1
+   \                     `??operator<<_24`: (+1)
+   \      0x132   0x2D01             CMP      R5,#+1
+   \      0x134   0xDB26             BLT.N    `??operator<<_23`
+   \      0x136   0xF05F 0x30FF      MOVS     R0,#-1
+   \      0x13A   0x9002             STR      R0,[SP, #+8]
+   \      0x13C   0x2C00             CMP      R4,#+0
+   \      0x13E   0xD004             BEQ.N    `??operator<<_26`
+   \      0x140   0x6820             LDR      R0,[R4, #+0]
+   \      0x142   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \      0x146   0x4420             ADD      R0,R4,R0
+   \      0x148   0xE000             B.N      `??operator<<_27`
+   \                     `??operator<<_26`: (+1)
+   \      0x14A   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_27`: (+1)
+   \      0x14C   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE4fillEv
+   \      0x150   0x0006             MOVS     R6,R0
+   \      0x152   0x2C00             CMP      R4,#+0
+   \      0x154   0xD004             BEQ.N    `??operator<<_28`
+   \      0x156   0x6820             LDR      R0,[R4, #+0]
+   \      0x158   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \      0x15C   0x4420             ADD      R0,R4,R0
+   \      0x15E   0xE000             B.N      `??operator<<_29`
+   \                     `??operator<<_28`: (+1)
+   \      0x160   0x2000             MOVS     R0,#+0
+   \                     `??operator<<_29`: (+1)
+   \      0x162   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5rdbufEv
+   \      0x166   0x0031             MOVS     R1,R6
+   \      0x168   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \      0x16A   0x....'....        BL       _ZNSt15basic_streambufIcSt11char_traitsIcEE5sputcEc
+   \      0x16E   0x9001             STR      R0,[SP, #+4]
+   \      0x170   0xA901             ADD      R1,SP,#+4
+   \      0x172   0xA802             ADD      R0,SP,#+8
+   \      0x174   0x....'....        BL       _ZNSt11char_traitsIcE11eq_int_typeERKiS2_
+   \      0x178   0x2800             CMP      R0,#+0
+   \      0x17A   0xD0D9             BEQ.N    `??operator<<_25`
+   \      0x17C   0x2104             MOVS     R1,#+4
+   \      0x17E   0x4668             MOV      R0,SP
+   \      0x180   0x....'....        BL       _ZStoRRNSt5_IosbIiE8_IostateES1_
+   \                     `??operator<<_23`: (+1)
+   \      0x184   0x2100             MOVS     R1,#+0
+   \      0x186   0x6820             LDR      R0,[R4, #+0]
+   \      0x188   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \      0x18C   0x4420             ADD      R0,R4,R0
+   \      0x18E   0x....'....        BL       _ZNSt8ios_base5widthEi
+   \                     `??operator<<_10`: (+1)
+   \      0x192   0x2200             MOVS     R2,#+0
+   \      0x194   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \      0x198   0x6820             LDR      R0,[R4, #+0]
+   \      0x19A   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \      0x19E   0x4420             ADD      R0,R4,R0
+   \      0x1A0   0x....'....        BL       _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateENSt5_IosbIiE8_IostateEb
+   \      0x1A4   0xA805             ADD      R0,SP,#+20
+   \      0x1A6   0x....'....        BL       _ZNSo6sentryD1Ev
+   \      0x1AA   0x0020             MOVS     R0,R4
+   \      0x1AC   0xB008             ADD      SP,SP,#+32
+   \      0x1AE   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp std::ostream &std::endl<char, std::char_traits<char>>(std::ostream &)
+   \                     _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD004             BEQ.N    ??endl_0
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0xF850 0x0C0C      LDR      R0,[R0, #-12]
+   \        0xE   0x4420             ADD      R0,R4,R0
+   \       0x10   0xE000             B.N      ??endl_1
+   \                     ??endl_0: (+1)
+   \       0x12   0x2000             MOVS     R0,#+0
+   \                     ??endl_1: (+1)
+   \       0x14   0x210A             MOVS     R1,#+10
+   \       0x16   0x....'....        BL       _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+   \       0x1A   0x0001             MOVS     R1,R0
+   \       0x1C   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x....'....        BL       _ZNSo3putEc
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       _ZNSo5flushEv
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_steady
+   \                     _ZNSt6chrono12system_clock9is_steadyE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_monotonic
+   \                     _ZNSt6chrono12system_clock12is_monotonicE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::steady_clock::is_steady
+   \                     _ZNSt6chrono12steady_clock9is_steadyE:
+   \        0x0   0x01               DC8 1
+      4          #include <iostream>
+      5          
+
+   \                                 In section .text, align 2, keep-with-next
+      6          void SensorDirector::Execute() {
+      7          }
+   \                     _ZN14SensorDirector7ExecuteEv: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+      8          
+
+   \                                 In section .text, align 2, keep-with-next
+      9          void SensorDirector::HandleButtonPushed() {
+   \                     _ZN14SensorDirector18HandleButtonPushedEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     10            std::cout << " Terminal " << std::endl ;
+   \        0x2   0x....             LDR.N    R1,??DataTable1
+   \        0x4   0x....             LDR.N    R0,??DataTable1_1
+   \        0x6   0x....'....        BL       _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+   \        0xA   0x....             LDR.N    R1,??DataTable1_2
+   \        0xC   0x....'....        BL       _ZNSolsEPFRSoS_E
+     11          }
+   \       0x10   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __interwork __vfp void SensorDirector::HandleButtonPushed for ISubscriber/-604/()
+   \                     _ZThn604_N14SensorDirector18HandleButtonPushedEv: (+1)
+   \        0x0   0xF5B0 0x7017      SUBS     R0,R0,#+604
+   \        0x4                      REQUIRE _ZN14SensorDirector18HandleButtonPushedEv
+   \        0x4                      ;; // Fall through to label SensorDirector::HandleButtonPushed()
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     _ZSt4cout
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x20 0x54          DC8 " Terminal "
+   \              0x65 0x72    
+   \              0x6D 0x69    
+   \              0x6E 0x61    
+   \              0x6C 0x20    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SensorDirector::Execute()
+       0   SensorDirector::HandleButtonPushed for ISubscriber/-604/()
+         0   -> SensorDirector::HandleButtonPushed()
+       8   SensorDirector::HandleButtonPushed()
+         8   -> std::operator<<<std::char_traits<char>>(std::ostream &, char const *)
+         8   -> std::ostream::operator<<(std::ostream &(*)(std::ostream &))
+       8   std::_Wrap_facet<std::ios::_Ctype>::_Wrap_facet()
+         8   -> std::ctype<char>::subobject ctype()
+       8   std::_Wrap_facet<std::ios::_Ctype>::deleter ~_Wrap_facet()
+         8   -> operator delete(void *, unsigned int) noexcept
+         8   -> std::_Wrap_facet<std::ios::_Ctype>::~_Wrap_facet()
+       0   std::_Wrap_facet<std::ios::_Ctype>::~_Wrap_facet()
+       0   std::char_traits<char>::eq_int_type(int const &, int const &)
+       8   std::char_traits<char>::length(char const *)
+         8   -> strlen
+       0   std::char_traits<char>::to_int_type(char const &)
+       0   std::ctype<char>::ctype()
+       8   std::ctype<char>::deleter ~ctype()
+         8   -> operator delete(void *, unsigned int) noexcept
+         8   -> std::ctype<char>::~ctype()
+       8   std::ctype<char>::subobject ctype()
+         8   -> std::ctype<char>::ctype()
+       0   std::ctype<char>::widen(char) const
+       0   std::ctype<char>::~ctype()
+       8   std::endl<char, std::char_traits<char>>(std::ostream &)
+         8   -> std::ios::widen(char) const
+         8   -> std::ostream::flush()
+         8   -> std::ostream::put(char)
+       8   std::ios::clear(std::ios_base::iostate, bool)
+         8   -> std::ios_base::clear(std::ios_base::iostate, bool)
+       0   std::ios::fill() const
+       0   std::ios::rdbuf() const
+      16   std::ios::setstate(std::ios_base::iostate, bool)
+        16   -> std::ios::clear(std::ios_base::iostate, bool)
+        16   -> std::ios_base::rdstate() const
+       0   std::ios::tie() const
+       8   std::ios::widen(char) const
+         8   -> std::ctype<char>::widen(char) const
+         8   -> std::use_facet<std::ios::_Ctype>()
+       0   std::ios_base::flags() const
+       8   std::ios_base::good() const
+         8   -> std::ios_base::rdstate() const
+       0   std::ios_base::rdstate() const
+       0   std::ios_base::width() const
+       0   std::ios_base::width(int)
+       0   std::operator&(std::ios_base::fmtflags, std::ios_base::fmtflags)
+      56   std::operator<<<std::char_traits<char>>(std::ostream &, char const *)
+        56   -> std::char_traits<char>::eq_int_type(int const &, int const &)
+        56   -> std::char_traits<char>::length(char const *)
+        56   -> std::ios::fill() const
+        56   -> std::ios::rdbuf() const
+        56   -> std::ios::setstate(std::ios_base::iostate, bool)
+        56   -> std::ios_base::flags() const
+        56   -> std::ios_base::width() const
+        56   -> std::ios_base::width(int)
+        56   -> std::operator&(std::ios_base::fmtflags, std::ios_base::fmtflags)
+        56   -> std::operator|=(std::ios_base::iostate &, std::ios_base::iostate)
+        56   -> std::ostream::_Flush_sentry::operator bool() const
+        56   -> std::ostream::sentry::sentry(std::ostream &)
+        56   -> std::ostream::sentry::~sentry()
+        56   -> std::streambuf::sputc(char)
+        56   -> std::streambuf::sputn(char const *, int)
+       0   std::operator|=(std::ios_base::iostate &, std::ios_base::iostate)
+      16   std::ostream::_Flush_sentry::_Flush_sentry(std::ostream &)
+        16   -> std::ios_base::good() const
+        16   -> std::ostream::_Sentry_base::subobject _Sentry_base(std::ostream &)
+       0   std::ostream::_Flush_sentry::operator bool() const
+       8   std::ostream::_Flush_sentry::subobject _Flush_sentry(std::ostream &)
+         8   -> std::ostream::_Flush_sentry::_Flush_sentry(std::ostream &)
+       8   std::ostream::_Flush_sentry::subobject ~_Flush_sentry()
+         8   -> std::ostream::_Flush_sentry::~_Flush_sentry()
+       8   std::ostream::_Flush_sentry::~_Flush_sentry()
+         8   -> std::ostream::_Osfx()
+         8   -> std::ostream::_Sentry_base::subobject ~_Sentry_base()
+       8   std::ostream::_Osfx()
+         8   -> std::ios::rdbuf() const
+         8   -> std::ios::setstate(std::ios_base::iostate, bool)
+         8   -> std::ios_base::flags() const
+         8   -> std::ios_base::good() const
+         8   -> std::operator&(std::ios_base::fmtflags, std::ios_base::fmtflags)
+         8   -> std::streambuf::pubsync()
+       8   std::ostream::_Sentry_base::_Sentry_base(std::ostream &)
+         8   -- Indirect call
+         8   -> std::ios::rdbuf() const
+       8   std::ostream::_Sentry_base::subobject _Sentry_base(std::ostream &)
+         8   -> std::ostream::_Sentry_base::_Sentry_base(std::ostream &)
+       8   std::ostream::_Sentry_base::subobject ~_Sentry_base()
+         8   -> std::ostream::_Sentry_base::~_Sentry_base()
+       8   std::ostream::_Sentry_base::~_Sentry_base()
+         8   -- Indirect call
+         8   -> std::ios::rdbuf() const
+      16   std::ostream::flush()
+        16   -> std::ios::rdbuf() const
+        16   -> std::ios::setstate(std::ios_base::iostate, bool)
+        16   -> std::ostream::_Flush_sentry::_Flush_sentry(std::ostream &)
+        16   -> std::ostream::_Flush_sentry::operator bool() const
+        16   -> std::ostream::_Flush_sentry::~_Flush_sentry()
+        16   -> std::streambuf::pubsync()
+       8   std::ostream::operator<<(std::ostream &(*)(std::ostream &))
+         8   -- Indirect call
+      32   std::ostream::put(char)
+        32   -> std::char_traits<char>::eq_int_type(int const &, int const &)
+        32   -> std::ios::rdbuf() const
+        32   -> std::ios::setstate(std::ios_base::iostate, bool)
+        32   -> std::operator|=(std::ios_base::iostate &, std::ios_base::iostate)
+        32   -> std::ostream::_Flush_sentry::operator bool() const
+        32   -> std::ostream::sentry::sentry(std::ostream &)
+        32   -> std::ostream::sentry::~sentry()
+        32   -> std::streambuf::sputc(char)
+      16   std::ostream::sentry::sentry(std::ostream &)
+        16   -> std::ios::tie() const
+        16   -> std::ios_base::good() const
+        16   -> std::ostream::_Flush_sentry::subobject _Flush_sentry(std::ostream &)
+        16   -> std::ostream::flush()
+       8   std::ostream::sentry::~sentry()
+         8   -> std::ostream::_Flush_sentry::subobject ~_Flush_sentry()
+       0   std::streambuf::_Pnavail() const
+       0   std::streambuf::_Pninc()
+       8   std::streambuf::pubsync()
+         8   -- Indirect call
+      16   std::streambuf::sputc(char)
+        16   -- Indirect call
+        16   -> std::char_traits<char>::to_int_type(char const &)
+        16   -> std::streambuf::_Pnavail() const
+        16   -> std::streambuf::_Pninc()
+       8   std::streambuf::sputn(char const *, int)
+         8   -- Indirect call
+       8   std::use_facet<std::ios::_Ctype>()
+         8   -> std::_Wrap_facet<std::ios::_Ctype>::_Wrap_facet()
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      12  ?_0
+       2  SensorDirector::Execute()
+       4  SensorDirector::HandleButtonPushed for ISubscriber/-604/()
+      18  SensorDirector::HandleButtonPushed()
+       4  _MyFacet
+      24  std::_Wrap_facet<std::ios::_Ctype>::_Wrap_facet()
+      20  std::_Wrap_facet<std::ios::_Ctype>::deleter ~_Wrap_facet()
+       2  std::_Wrap_facet<std::ios::_Ctype>::~_Wrap_facet()
+      18  std::char_traits<char>::eq_int_type(int const &, int const &)
+      18  std::char_traits<char>::length(char const *)
+       4  std::char_traits<char>::to_int_type(char const &)
+       1  std::chrono::steady_clock::is_steady
+       1  std::chrono::system_clock::is_monotonic
+       1  std::chrono::system_clock::is_steady
+      12  std::ctype<char>::ctype()
+      20  std::ctype<char>::deleter ~ctype()
+       8  std::ctype<char>::subobject ctype()
+       6  std::ctype<char>::widen(char) const
+       2  std::ctype<char>::~ctype()
+      46  std::endl<char, std::char_traits<char>>(std::ostream &)
+      24  std::ios::clear(std::ios_base::iostate, bool)
+       6  std::ios::fill() const
+       4  std::ios::rdbuf() const
+      40  std::ios::setstate(std::ios_base::iostate, bool)
+       4  std::ios::tie() const
+      18  std::ios::widen(char) const
+       4  std::ios_base::flags() const
+      20  std::ios_base::good() const
+       4  std::ios_base::rdstate() const
+       4  std::ios_base::width() const
+       8  std::ios_base::width(int)
+       6  std::operator&(std::ios_base::fmtflags, std::ios_base::fmtflags)
+     434  std::operator<<<std::char_traits<char>>(std::ostream &, char const *)
+       8  std::operator|=(std::ios_base::iostate &, std::ios_base::iostate)
+      40  std::ostream::_Flush_sentry::_Flush_sentry(std::ostream &)
+       4  std::ostream::_Flush_sentry::operator bool() const
+       8  std::ostream::_Flush_sentry::subobject _Flush_sentry(std::ostream &)
+       8  std::ostream::_Flush_sentry::subobject ~_Flush_sentry()
+      20  std::ostream::_Flush_sentry::~_Flush_sentry()
+      84  std::ostream::_Osfx()
+      72  std::ostream::_Sentry_base::_Sentry_base(std::ostream &)
+       8  std::ostream::_Sentry_base::subobject _Sentry_base(std::ostream &)
+       8  std::ostream::_Sentry_base::subobject ~_Sentry_base()
+      70  std::ostream::_Sentry_base::~_Sentry_base()
+      84  std::ostream::flush()
+       6  std::ostream::operator<<(std::ostream &(*)(std::ostream &))
+     118  std::ostream::put(char)
+     114  std::ostream::sentry::sentry(std::ostream &)
+      14  std::ostream::sentry::~sentry()
+      24  std::streambuf::_Pnavail() const
+      14  std::streambuf::_Pninc()
+      10  std::streambuf::pubsync()
+      50  std::streambuf::sputc(char)
+      10  std::streambuf::sputn(char const *, int)
+      32  std::use_facet<std::ios::_Ctype>()
+     373  -- Other
+
+ 
+     5 bytes in section .bss
+   387 bytes in section .rodata
+ 1'598 bytes in section .text
+ 
+ 36 bytes of CODE  memory (+ 1'562 bytes shared)
+ 12 bytes of CONST memory (+   375 bytes shared)
+  0 bytes of DATA  memory (+     5 bytes shared)
+
+Errors: none
+Warnings: 1

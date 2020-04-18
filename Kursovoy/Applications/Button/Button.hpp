@@ -1,5 +1,11 @@
 //Button.hpp
 
-#ifndef _button_hpp
-#define _button_hpp
-#endif //button_hpp
+#pragma once
+
+template<typename Pin>
+class Button {
+public:
+  bool IsPushed() {
+    return !Pin::IsSet() ;
+  } ;
+} ;  

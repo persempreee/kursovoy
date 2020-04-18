@@ -1,80 +1,379 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         08/Apr/2020  18:14:49
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         18/Apr/2020  10:53:01
 # Copyright 1999-2019 IAR Systems AB.
 #
 #    Cpu mode     =  
 #    Endian       =  little
 #    Source file  =
 #        D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Button\TaskButton.cpp
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp
 #    Command line =
-#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW6C83.tmp ("D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Button\TaskButton.cpp"
-#        -lC "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -lA
-#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -o "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj" --no_cse
-#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
-#        --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e
-#        --fpu=VFPv4_sp --dlib_config
+#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW7C77.tmp ("D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp"
+#        -lC "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
+#        -lA "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
+#        -o "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
 #        D:\Programs\IAR\arm\inc\c\DLib_Config_Normal.h -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\FreeRtos\" -I
-#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\" -I
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\" -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\include\" -I
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\FreeRtos\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\" -I
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\include\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\Common\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\MyTasks\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\Common\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
-#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\MyTasks\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Common\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\CMSIS\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\Diagnostic\" -I
-#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\" -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\GpioPort\" -I
+#        @@@@@@@\poip\@@@@@@\1104ira\KURS-master\Kursovoy\Common\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\CMSIS\" -I
+#        "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\IrqController\" -I
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\Diagnostic\"
+#        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\GpioPort\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\IrqController\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Port\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\Singleton\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\SPI\"
 #        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\Pin\"
 #        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Port\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
-#        -I "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\" -I
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\" -I
 #        "D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\Singleton\"
-#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\"
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\"
+#        -I "D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\Driver\"
 #        -Ol --c++ --no_exceptions --no_rtti)
 #    Locale       =  C
 #    List file    =
 #        D:\8
-#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List\TaskButton.lst
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List\TaskButton.lst
 #    Object file  =
-#        D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj\TaskButton.o
+#        D:\8
+#        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\Obj\TaskButton.o
 #
 ###############################################################################
 
+D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp
+      1          //TaskButton.cpp
+Warning[Ms014]: some characters could not be correctly encoded in "D:\8
+          @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List\TaskButton.s", and have
+          been replaced with '@'. The first such character has unicode code
+          point 0x441 ("@")
+      2          
+      3          #include "TaskButton.hpp" 
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp OsWrapper::TicksPerSecond std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+   \                     _ZNSt6chrono13duration_castINS_8durationIjSt5ratioILx10ELx1000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr3std6chrono12_Is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+   \        0x2   0x....'....        BL       _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000EEE5countEv
+   \        0x6   0x220A             MOVS     R2,#+10
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x....'....        BL       __aeabi_ldivmod
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+   \       0x10   0xA901             ADD      R1,SP,#+4
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x....'....        BL       _ZNSt6chrono8durationIjSt5ratioILx10ELx1000EEEC1IjvEERKT_
+   \       0x18   0x9800             LDR      R0,[SP, #+0]
+   \       0x1A   0xBD0E             POP      {R1-R3,PC}       ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+   \                     _ZNSt6chrono8durationIjSt5ratioILx10ELx1000EEEC1IjvEERKT_: (+1)
+   \        0x0   0x6809             LDR      R1,[R1, #+0]
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp __int64_t std::chrono::duration<__int64_t, std::milli>::count() const
+   \                     _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000EEE5countEv: (+1)
+   \        0x0   0xE9D0 0x0100      LDRD     R0,R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp uint32_t std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+   \                     _ZNKSt6chrono8durationIjSt5ratioILx10ELx1000EEE5countEv: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_steady
+   \                     _ZNSt6chrono12system_clock9is_steadyE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_monotonic
+   \                     _ZNSt6chrono12system_clock12is_monotonicE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::steady_clock::is_steady
+   \                     _ZNSt6chrono12steady_clock9is_steadyE:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::RtosWrapper::wSleep(uint32_t)
+   \                     _ZN9OsWrapper11RtosWrapper6wSleepEj: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       vTaskDelay
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp OsWrapper::IThread::subobject IThread()
+   \                     _ZN9OsWrapper7IThreadC2Ev: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN9OsWrapper7IThreadC1Ev
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp OsWrapper::IThread::IThread()
+   \                     _ZN9OsWrapper7IThreadC1Ev: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6541             STR      R1,[R0, #+84]
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x6581             STR      R1,[R0, #+88]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+   \                     _ZN9OsWrapper7IThread5SleepENSt6chrono8durationIxSt5ratioILx1ELx1000EEEE: (+1)
+   \        0x0   0xB583             PUSH     {R0,R1,R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+   \        0x4   0xA802             ADD      R0,SP,#+8
+   \        0x6   0x....'....        BL       _ZNSt6chrono13duration_castINS_8durationIjSt5ratioILx10ELx1000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr3std6chrono12_Is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0x....'....        BL       _ZNKSt6chrono8durationIjSt5ratioILx10ELx1000EEE5countEv
+   \       0x12   0x....'....        BL       _ZN9OsWrapper11RtosWrapper6wSleepEj
+   \       0x16   0xB005             ADD      SP,SP,#+20
+   \       0x18   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp OsWrapper::Thread<128U>::subobject Thread()
+   \                     _ZN9OsWrapper6ThreadILj128EEC2Ev: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN9OsWrapper6ThreadILj128EEC1Ev
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp OsWrapper::Thread<128U>::Thread()
+   \                     _ZN9OsWrapper6ThreadILj128EEC1Ev: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       _ZN9OsWrapper7IThreadC2Ev
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool Pin<GPIOC, 13U>::IsSet()
+   \                     _ZN3PinI5GPIOCLj13EE5IsSetEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN12RegisterBaseILj1073874960ELj32E8ReadModeE3GetIS0_vEEjv
+   \        0x6   0x0B40             LSRS     R0,R0,#+13
+   \        0x8   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xC   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp bool Button<Pin<GPIOC, 13U>>::IsPushed()
+   \                     _ZN6ButtonI3PinI5GPIOCLj13EEE8IsPushedEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN3PinI5GPIOCLj13EE5IsSetEv
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??IsPushed_0
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0xE000             B.N      ??IsPushed_1
+   \                     ??IsPushed_0: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \                     ??IsPushed_1: (+1)
+   \       0x10   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \       0x12   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp uint32_t RegisterBase<1073874960U, 32U, ReadMode>::Get<ReadMode, void>()
+   \                     _ZN12RegisterBaseILj1073874960ELj32E8ReadModeE3GetIS0_vEEjv: (+1)
+   \        0x0   0x4801             LDR.N    R0,??Get_0       ;; 0x40020810
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   \        0x6   0xBF00             Nop      
+   \                     ??Get_0:
+   \        0x8   0x4002'0810        DC32     0x40020810
+      4          
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __code __interwork __vfp TaskButton::subobject TaskButton(ISubscriber &)
+   \                     _ZN10TaskButtonC2ER11ISubscriber: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       _ZN10TaskButtonC1ER11ISubscriber
+   \        0x6   0xBD02             POP      {R1,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+      5          TaskButton::TaskButton(ISubscriber& buttonsubscriber): subscriber(buttonsubscriber) {
+   \                     _ZN10TaskButtonC1ER11ISubscriber: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       _ZN9OsWrapper6ThreadILj128EEC2Ev
+   \        0xC   0x....             LDR.N    R0,??DataTable2
+   \        0xE   0x6020             STR      R0,[R4, #+0]
+   \       0x10   0xF8C4 0x5260      STR      R5,[R4, #+608]
+      6          }
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+      7          
+
+   \                                 In section .text, align 2, keep-with-next
+      8          void TaskButton::Execute() {
+   \                     _ZN10TaskButton7ExecuteEv: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+      9            if (userbutton.IsPushed()) {
+   \        0x4   0xF514 0x7017      ADDS     R0,R4,#+604
+   \        0x8   0x....'....        BL       _ZN6ButtonI3PinI5GPIOCLj13EEE8IsPushedEv
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD006             BEQ.N    ??Execute_0
+     10              subscriber.HandleButtonPushed() ;
+   \       0x10   0xF8D4 0x0260      LDR      R0,[R4, #+608]
+   \       0x14   0xF8D4 0x1260      LDR      R1,[R4, #+608]
+   \       0x18   0x6809             LDR      R1,[R1, #+0]
+   \       0x1A   0x6809             LDR      R1,[R1, #+0]
+   \       0x1C   0x4788             BLX      R1
+   \                     ??Execute_0: (+1)
+   \       0x1E   0x....             LDR.N    R2,??DataTable2_1
+   \       0x20   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+     11            }
+     12            Sleep(300ms) ;
+   \       0x24   0x....'....        BL       _ZN9OsWrapper7IThread5SleepENSt6chrono8durationIxSt5ratioILx1ELx1000EEEE
+     13          } 
+   \       0x28   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     _ZTV10TaskButton+0x8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 8
+   \                     ?_0:
+   \        0x0   0x0000'0000'0      DC64 300
+   \              000'012C     
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Button<Pin<GPIOC, 13U>>::IsPushed()
+         8   -> Pin<GPIOC, 13U>::IsSet()
+       0   OsWrapper::IThread::IThread()
+      24   OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+        24   -> OsWrapper::RtosWrapper::wSleep(uint32_t)
+        24   -> std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+        24   -> std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+       8   OsWrapper::IThread::subobject IThread()
+         8   -> OsWrapper::IThread::IThread()
+       8   OsWrapper::RtosWrapper::wSleep(uint32_t)
+         8   -> vTaskDelay
+       8   OsWrapper::Thread<128U>::Thread()
+         8   -> OsWrapper::IThread::subobject IThread()
+       8   OsWrapper::Thread<128U>::subobject Thread()
+         8   -> OsWrapper::Thread<128U>::Thread()
+       8   Pin<GPIOC, 13U>::IsSet()
+         8   -> RegisterBase<1073874960U, 32U, ReadMode>::Get<ReadMode, void>()
+       0   RegisterBase<1073874960U, 32U, ReadMode>::Get<ReadMode, void>()
+       8   TaskButton::Execute()
+         8   -- Indirect call
+         8   -> Button<Pin<GPIOC, 13U>>::IsPushed()
+         8   -> OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+      16   TaskButton::TaskButton(ISubscriber &)
+        16   -> OsWrapper::Thread<128U>::subobject Thread()
+       8   TaskButton::subobject TaskButton(ISubscriber &)
+         8   -> TaskButton::TaskButton(ISubscriber &)
+       0   std::chrono::duration<__int64_t, std::milli>::count() const
+       0   std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+       0   std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+      16   std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+        16   -> std::chrono::duration<__int64_t, std::milli>::count() const
+        16   -> std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+        16 __aeabi_ldivmod
 
 
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       8  ?_0
+      20  Button<Pin<GPIOC, 13U>>::IsPushed()
+      10  OsWrapper::IThread::IThread()
+      26  OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+       8  OsWrapper::IThread::subobject IThread()
+       8  OsWrapper::RtosWrapper::wSleep(uint32_t)
+      14  OsWrapper::Thread<128U>::Thread()
+       8  OsWrapper::Thread<128U>::subobject Thread()
+      14  Pin<GPIOC, 13U>::IsSet()
+      12  RegisterBase<1073874960U, 32U, ReadMode>::Get<ReadMode, void>()
+      42  TaskButton::Execute()
+      24  TaskButton::TaskButton(ISubscriber &)
+       8  TaskButton::subobject TaskButton(ISubscriber &)
+       6  std::chrono::duration<__int64_t, std::milli>::count() const
+       4  std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+       6  std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+      28  std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+       1  std::chrono::steady_clock::is_steady
+       1  std::chrono::system_clock::is_monotonic
+       1  std::chrono::system_clock::is_steady
+     160  -- Other
+
  
+ 171 bytes in section .rodata
+ 246 bytes in section .text
  
- 0 bytes of memory
+ 82 bytes of CODE  memory (+ 164 bytes shared)
+  8 bytes of CONST memory (+ 163 bytes shared)
 
 Errors: none
 Warnings: 1

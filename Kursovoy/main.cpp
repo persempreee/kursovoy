@@ -39,13 +39,24 @@ int __low_level_init(void) {
   RCC::AHB1ENR::GPIOHEN::Enable::Set() ;
   
   RCC::APB1ENR::USART2EN::Enable::Set() ;
+  
+  GPIOA::MODER::MODER2::Alternate::Set(); //Альтернативный режим порта А.2
+  GPIOA::MODER::MODER3::Alternate::Set(); //Альтернативный режим порта А.3
+  
+  GPIOA::OTYPER::OT2::OutputPushPull::Set(); // настройка типа вывода: двухтактный выход (Output push-pull) порта А.2
+  GPIOA::OTYPER::OT3::OutputPushPull::Set(); // настройка типа вывода: двухтактный выход (Output push-pull) порта А.3
+  
+  GPIOA::PUPDR::PUPDR2::PullUp::Set(); //pull-up порта А.2 (подтяжка к 1)
+  GPIOA::PUPDR::PUPDR3::PullUp::Set(); //pull-up порта А.3 (подтяжка к 1)
+  GPIOA::AFRL::AFRL2::Af7::Set(); //биты для настройки альтернативных функций ввода-вывода. порт А.2
+  GPIOA::AFRL::AFRL3::Af7::Set(); //биты для настройки альтернативных функций ввода-вывода. порт А.3
   return 1;
 }
 }
 
 int main()
 {
-  USART<USART2, 16000000U> USART2 ;
+  using MyUSART = USART<USART2, 16000000U> ;
   UsartConfig USART2Config ;
   USART2Config.speed = Speed::Speed9600 ;
   USART2Config.stopbits = StopBits::OneBit ;
@@ -53,10 +64,11 @@ int main()
   USART2Config.parity = Parity::Even ;
   USART2Config.samplingmode = SamplingMode::Mode8 ;
   
-  USART2.Config(USART2Config) ;
-  USART2.On() ;
+  MyUSART::Config(USART2Config) ;
+  MyUSART::On() ;
   for (;;) {
-    USART2.SendData(message.str, message.size) ;
+    MyUSART::SendData(message.str, message.size) ;
+    for (auto i=0 ; i<10000000 ; i++) ;
   }
   
   return 0 ;
