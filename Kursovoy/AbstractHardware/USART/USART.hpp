@@ -1,6 +1,6 @@
 #pragma once
-#include "UsartConfig.hpp" // for UsartConfig, tParity, tBitsSize
-#include <cmath> //for USARTDIV
+#include "USARTConfig.hpp" // for UsartConfig, tParity, tBitsSize
+// #include <cmath> //for USARTDIV
 #include "usart2registers.hpp"
 
 template <typename USARTModule, uint32_t ClockSpeed>

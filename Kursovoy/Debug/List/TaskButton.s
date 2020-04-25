@@ -1,92 +1,108 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM        18/Apr/2020  10:53:01
+// IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM        25/Apr/2020  12:04:46
 // Copyright 1999-2019 IAR Systems AB.
 //
 //    Cpu mode     =  
 //    Endian       =  little
 //    Source file  =
 //        D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Button\TaskButton.cpp
 //    Command line =
-//        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW7C77.tmp ("D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp"
-//        -lC "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
-//        -lA "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List"
-//        -o "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\Obj"
+//        -f C:\Users\-ACD6~1\AppData\Local\Temp\EWAB91.tmp ("D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Button\TaskButton.cpp"
+//        -lC "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List"
+//        -lA "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List"
+//        -o "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\Obj"
 //        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
 //        --no_clustering --no_scheduling --debug --endian=little
 //        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
 //        D:\Programs\IAR\arm\inc\c\DLib_Config_Normal.h -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\" -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\" -I
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\" -I
 //        "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\wrapper\FreeRtos\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\wrapper\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\" -I
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\Common\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\MyTasks\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Common\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\CMSIS\" -I
 //        "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\include\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Application\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Application\Diagnostic\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\Common\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\GpioPort\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\IrqController\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
-//        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\MyTasks\" -I
-//        "D:\8
-//        @@@@@@@\poip\@@@@@@\1104ira\KURS-master\Kursovoy\Common\"
-//        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\CMSIS\" -I
-//        "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Application\Diagnostic\"
-//        -I "D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\GpioPort\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AHardware\IrqController\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Port\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\Common\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\Common\Singleton\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Port\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\SPI\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\Pin\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\..\CortexLib\Common\Singleton\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\USART\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\" -I
-//        "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\SPI\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\AbstractHardware\Pin\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Button\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\" -I
-//        "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Sensor\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Sensor\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Display\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Display\Driver\"
 //        -I "D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Output\Display\Driver\"
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Format\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\"
+//        -I "D:\8
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\Driver\"
 //        -Ol --c++ --no_exceptions --no_rtti)
 //    Locale       =  C
 //    List file    =
 //        D:\8
-//        @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Debug\List\TaskButton.s
+//        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List\TaskButton.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -184,7 +200,7 @@
           CFI D15 SameValue
           CFI EndCommon cfiCommon0
         
-// D:\8 @@@@@@@\poip\@@@@@@\1804s\Kursovoy\Applications\Button\TaskButton.cpp
+// D:\8 @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Button\TaskButton.cpp
 //    1 //TaskButton.cpp
 //    2 
 //    3 #include "TaskButton.hpp" 

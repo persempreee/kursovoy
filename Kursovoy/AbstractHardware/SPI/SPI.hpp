@@ -17,6 +17,10 @@ public:
     SetFrameFormat(spiconfig.frameformat);
     SetBaudRate(spiconfig.baudrate);
     SetTimingRelationships(spiconfig.timingrelationships);
+    SetBIDImode(spiconfig.bidimode);
+    SetCSmode(spiconfig.csmode);
+    SetCRC(spiconfig.crcen);
+    
   }
   
   static void WriteData(uint8_t *data, size_t lenght) {
@@ -31,7 +35,7 @@ public:
   
   static void WriteByte(uint8_t Byte) {
     //ждем, пока буфер передатчика не освободится
-    while (!SPIModule :: SR :: TXE :: TxBufferNotEmpty :: IsSet()) {
+    while (SPIModule :: SR :: TXE :: TxBufferNotEmpty :: IsSet()) {
     } 
     //передаем байт данных
     SPIModule :: DR :: Write(Byte) ;
@@ -138,4 +142,56 @@ private:
         break ;
       }
     }
+
+    static void SetBIDImode(BIDImode bidimode) {
+      switch (bidimode) {
+      case BIDImode::LINE2:
+        SPIModule :: CR1 :: BIDIMODE :: Unidirectional2Line :: Set();
+        break ;
+      case BIDImode::LINE1:
+        SPIModule :: CR1 :: BIDIMODE :: Bidirectional1Line :: Set() ;
+        break ;
+      default:
+        assert(false) ;
+        break ;
+      }
+    }    
+
+    static void SetCSmode(CSmode csmode) {
+      switch (csmode) {
+      case CSmode::AUTODIS:
+        SPIModule :: CR1 :: SSM :: NssSoftwareDisable :: Set();
+        SPIModule :: CR1 :: SSI :: Value0 :: Set();
+        break;
+      case CSmode::AUTOEN:
+        SPIModule :: CR1 :: SSM :: NssSoftwareDisable :: Set();
+        SPIModule :: CR1 :: SSI :: Value1 :: Set();
+        break;
+      case CSmode::SOFTDIS:
+        SPIModule :: CR1 :: SSM :: NssSoftwareEnable :: Set();
+        SPIModule :: CR1 :: SSI :: Value0 :: Set();
+        break;
+      case CSmode::SOFTEN:
+        SPIModule :: CR1 :: SSM :: NssSoftwareEnable :: Set();
+        SPIModule :: CR1 :: SSI :: Value1 :: Set();
+        break;
+      default:
+        assert(false) ;
+        break ;
+      }
+    }
+    
+    static void SetCRC(CRCen crcen) {
+      switch (crcen) {
+      case CRCen::DISABLE:
+        SPIModule :: CR1 :: CRCEN :: CrcCalcDisable :: Set();
+        break ;
+      case CRCen::ENABLE:
+        SPIModule :: CR1 :: CRCEN :: CrcCalcEnable :: Set();
+        break ;
+      default:
+        assert(false) ;
+        break ;
+      }
+    } 
 };

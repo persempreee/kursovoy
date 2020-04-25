@@ -35,6 +35,23 @@ enum class TimingRelationships {
   MODE11
 };
 
+enum class BIDImode {
+  LINE2,
+  LINE1
+};
+
+enum class CSmode {
+  AUTODIS,
+  AUTOEN,
+  SOFTDIS,
+  SOFTEN
+};
+
+enum class CRCen {
+  ENABLE,
+  DISABLE
+};
+
 struct SPIConfig
 {
   Mode mode;
@@ -42,4 +59,7 @@ struct SPIConfig
   FrameFormat frameformat;
   BaudRate baudrate;
   TimingRelationships timingrelationships;
+  BIDImode bidimode;
+  CSmode csmode;
+  CRCen crcen;
 };

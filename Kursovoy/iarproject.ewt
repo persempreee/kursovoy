@@ -2705,13 +2705,13 @@
         </group>
         <group>
             <name>USART</name>
+            <file>
+                <name>$PROJ_DIR$\AbstractHardware\USART\USART.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\AbstractHardware\USART\USARTConfig.hpp</name>
+            </file>
         </group>
-        <file>
-            <name>$PROJ_DIR$\AbstractHardware\USART.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\AbstractHardware\UsartConfig.hpp</name>
-        </file>
     </group>
     <group>
         <name>Application</name>
@@ -2733,7 +2733,22 @@
         <group>
             <name>Output</name>
             <group>
-                <name>BlueTooth</name>
+                <name>Bluetooth</name>
+                <group>
+                    <name>Driver</name>
+                    <file>
+                        <name>$PROJ_DIR$\Applications\Output\Bluetooth\Driver\BluetoothDriver.hpp</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\Applications\Output\Bluetooth\Driver\IBluetoothDriver.hpp</name>
+                    </file>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Bluetooth\Bluetooth.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Bluetooth\BluetoothDirector.hpp</name>
+                </file>
             </group>
             <group>
                 <name>Display</name>
@@ -2746,6 +2761,21 @@
                         <name>$PROJ_DIR$\Applications\Output\Display\Driver\IDisplayDriver.hpp</name>
                     </file>
                 </group>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\DisplayDirector.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\DisplayView.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\EInkDisplay.hpp</name>
+                </file>
+            </group>
+            <group>
+                <name>Format</name>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Format\Format.hpp</name>
+                </file>
             </group>
         </group>
         <group>

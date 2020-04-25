@@ -1,10 +1,7 @@
 #include "rtos.hpp"         // for Rtos
 #include "event.hpp"        // for Event
-#include "rccregisters.hpp" // for RCC
-#include "Pin.hpp" //for gpioa
-#include "USART.hpp" //for usart
 
-
+std::uint32_t SystemCoreClock = 16'000'000U ;
 
 #include "gpioaregisters.hpp" //for gpioa
 #include "gpiobregisters.hpp" //for gpiob
@@ -12,8 +9,24 @@
 #include "gpiodregisters.hpp" //for gpiod
 #include "gpioeregisters.hpp" //for gpioe
 #include "gpiohregisters.hpp" //for gpioh
-#include "usart2registers.hpp" //for usart2
-#include "susudefs.hpp" //for susuString
+#include "rccregisters.hpp" // for RCC
+#include "spi2registers.hpp" //for SPI2
+
+#include "Pin.hpp" //for Pin
+#include "SPI.hpp" //for SPI
+#include "USART.hpp"
+#include "TaskButton.hpp" //for TaskButton
+#include "SensorDirector.hpp" //for SensorDirector
+#include "ISubscriber.hpp" //for ISubscriber
+#include "DisplayDriver.hpp" //for DisplayDriver
+#include "EInkDisplay.hpp" //for EInkDisplay
+#include "DisplayView.hpp" //for DisplayView
+#include "DisplayDirector.hpp" //for DisplayDirector
+#include "Format.hpp" //for Format
+#include "susudefs.hpp" // for SusuString
+
+#include "IBluetoothDriver.hpp" //for IBluetoothDriver
+#include "BluetoothDriver.hpp" //for BluetoothDriver
 
 using namespace std ;
 constexpr SusuString message(" Hello World!") ;
@@ -50,26 +63,50 @@ int __low_level_init(void) {
   GPIOA::PUPDR::PUPDR3::PullUp::Set(); //pull-up порта А.3 (подтяжка к 1)
   GPIOA::AFRL::AFRL2::Af7::Set(); //биты для настройки альтернативных функций ввода-вывода. порт А.2
   GPIOA::AFRL::AFRL3::Af7::Set(); //биты для настройки альтернативных функций ввода-вывода. порт А.3
+  GPIOB::AFRH::AFRH13::Af5::Set() ; //это Ирины штуки
+  GPIOB::AFRH::AFRH15::Af5::Set() ; //это Ирины штуки
   return 1;
 }
 }
 
+using ResetPin = Pin<GPIOC, 3U> ; //это Ирины штуки
+using DcPin = Pin<GPIOB, 2U> ; //это Ирины штуки
+using CsPin = Pin<GPIOB, 1U> ; //это Ирины штуки
+using BusyPin = Pin<GPIOC, 2U> ; //это Ирины штуки
+using DinPin = Pin<GPIOC, 2U> ; //это Ирины штуки
+using ClkPin = Pin<GPIOC, 3U> ; //это Ирины штуки
+
+    using MyUSART = USART<USART2, 16000000U> ; // моооооооооооооооооееееееееееееееее
+
+SensorDirector mySensorDirector; //это Ирины штуки
+TaskButton myTaskButton (mySensorDirector); //это Ирины штуки
+
+
 int main()
 {
-  using MyUSART = USART<USART2, 16000000U> ;
-  UsartConfig USART2Config ;
-  USART2Config.speed = Speed::Speed9600 ;
-  USART2Config.stopbits = StopBits::OneBit ;
-  USART2Config.bitssize = BitsSize::Bits9 ;
-  USART2Config.parity = Parity::Even ;
-  USART2Config.samplingmode = SamplingMode::Mode8 ;
+  DisplayDriver<SPI<SPI2>,DinPin,ClkPin,CsPin,DcPin, ResetPin,BusyPin, //это Ирины штуки
+                400,300> Driver;
+  EInkDisplay<400,300> Display(Driver); //это Ирины штуки
+  using namespace OsWrapper; //это Ирины штуки
+  Rtos::CreateThread(mySensorDirector, "SensorDirector", ThreadPriority::normal); //это Ирины штуки
+  Rtos::CreateThread(myTaskButton, "Button", ThreadPriority::normal); //это Ирины штуки
+  Rtos::Start(); //это Ирины штуки
   
-  MyUSART::Config(USART2Config) ;
-  MyUSART::On() ;
-  for (;;) {
-    MyUSART::SendData(message.str, message.size) ;
-    for (auto i=0 ; i<10000000 ; i++) ;
-  }
   
-  return 0 ;
-} ;
+  //-----------------А это мое---------------------
+ // using MyUSART = USART<USART2, 16000000U> ;
+ // UsartConfig USART2Config ;
+ // USART2Config.speed = Speed::Speed9600 ;
+ // USART2Config.stopbits = StopBits::OneBit ;
+ // USART2Config.bitssize = BitsSize::Bits9 ;
+ // USART2Config.parity = Parity::Even ;
+//  USART2Config.samplingmode = SamplingMode::Mode8 ;
+  
+ // MyUSART::Config(USART2Config) ;
+ // MyUSART::On() ;
+ // for (;;) {
+   // MyUSART::SendData(message.str, message.size) ;
+  //  for (auto i=0 ; i<10000000 ; i++) ;
+ // }
+  return 0;
+};

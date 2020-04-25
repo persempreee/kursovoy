@@ -1,7 +1,7 @@
 TaskButton.pbi: \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button\TaskButton.cpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/TaskButton.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\thread.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button\TaskButton.cpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button/TaskButton.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\thread.hpp \
   D:\Programs\IAR\arm\inc\cpp\array \
   D:\Programs\IAR\arm\inc\cpp\algorithm \
   D:\Programs\IAR\arm\inc\cpp\xmemory \
@@ -55,45 +55,45 @@ TaskButton.pbi: \
   D:\Programs\IAR\arm\inc\cpp\system_error \
   D:\Programs\IAR\arm\inc\cpp\cerrno D:\Programs\IAR\arm\inc\c\errno.h \
   D:\Programs\IAR\arm\inc\cpp\tuple \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\FreeRtos\rtosdefs.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\FreeRtos.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/..\FreeRTOSConfig.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/projdefs.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/portable.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/deprecated_definitions.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portmacro.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos\rtosdefs.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\FreeRtos.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/..\FreeRTOSConfig.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/projdefs.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/portable.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/deprecated_definitions.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portmacro.h \
   D:\Programs\IAR\arm\inc\c\intrinsics.h \
   D:\Programs\IAR\arm\inc\c\iccarm_builtin.h \
   D:\Programs\IAR\arm\inc\c\iar_intrinsics_common.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/mpu_wrappers.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\task.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/list.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\semphr.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/queue.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\queue.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\timers.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/task.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include\event_groups.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\include/timers.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\Common\susudefs.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\FreeRtos\FreeRTOSConfig.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/mpu_wrappers.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\task.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/list.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\semphr.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/queue.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\queue.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\timers.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/task.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\event_groups.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include/timers.h \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\Common\susudefs.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\FreeRTOSConfig.h \
   D:\Programs\IAR\arm\inc\cpp\chrono D:\Programs\IAR\arm\inc\cpp\ratio \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\FreeRtos\rtoswrapper.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\FreeRtos/rtosdefs.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Rtos\wrapper\eventmode.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/ISubscriber.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\AbstractHardware\Pin\Pin.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\Applications\Button/Button.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\fieldvalue.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvaluebase.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/accessmode.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/registerfield.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos\rtoswrapper.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos/rtosdefs.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\eventmode.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button/ISubscriber.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\Pin\Pin.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button/Button.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\fieldvalue.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvaluebase.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers/accessmode.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers/registerfield.hpp \
   D:\Programs\IAR\arm\inc\cpp\cassert D:\Programs\IAR\arm\inc\c\assert.h \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Atomic\atomicutils.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\registerbase.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/registertype.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\register.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvalue.hpp \
-  D:\8\ семестр\poip\курсач\1804s\Kursovoy\..\CortexLib\AbstractHardware\Registers\accessmode.hpp
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Atomic\atomicutils.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\registerbase.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers/registertype.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\register.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers/fieldvalue.hpp \
+  D:\8\ семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\accessmode.hpp

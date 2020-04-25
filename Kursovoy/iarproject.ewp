@@ -356,7 +356,7 @@
                     <state>$PROJ_DIR$\Rtos\FreeRtos\portable\IAR\ARM_CM4F</state>
                     <state>$PROJ_DIR$\Rtos\FreeRtos\portable\MemMang</state>
                     <state>$PROJ_DIR$\MyTasks</state>
-                    <state>D:\8 семестр\poip\курсач\1104ira\KURS-master\Kursovoy\Common</state>
+                    <state>$PROJ_DIR$\Common</state>
                     <state>$PROJ_DIR$\CMSIS</state>
                     <state>$PROJ_DIR$\Application</state>
                     <state>$PROJ_DIR$\Application\Diagnostic</state>
@@ -374,12 +374,16 @@
                     <state>$PROJ_DIR$\AbstractHardware</state>
                     <state>$PROJ_DIR$\AbstractHardware\SPI</state>
                     <state>$PROJ_DIR$\AbstractHardware\Pin</state>
+                    <state>$PROJ_DIR$\AbstractHardware\USART</state>
                     <state>$PROJ_DIR$\Applications</state>
                     <state>$PROJ_DIR$\Applications\Button</state>
                     <state>$PROJ_DIR$\Applications\Sensor</state>
                     <state>$PROJ_DIR$\Applications\Output</state>
                     <state>$PROJ_DIR$\Applications\Output\Display</state>
                     <state>$PROJ_DIR$\Applications\Output\Display\Driver</state>
+                    <state>$PROJ_DIR$\Applications\Output\Format</state>
+                    <state>$PROJ_DIR$\Applications\Output\Bluetooth</state>
+                    <state>$PROJ_DIR$\Applications\Output\Bluetooth\Driver</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2477,13 +2481,13 @@
         </group>
         <group>
             <name>USART</name>
+            <file>
+                <name>$PROJ_DIR$\AbstractHardware\USART\USART.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\AbstractHardware\USART\USARTConfig.hpp</name>
+            </file>
         </group>
-        <file>
-            <name>$PROJ_DIR$\AbstractHardware\USART.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\AbstractHardware\UsartConfig.hpp</name>
-        </file>
     </group>
     <group>
         <name>Application</name>
@@ -2505,7 +2509,22 @@
         <group>
             <name>Output</name>
             <group>
-                <name>BlueTooth</name>
+                <name>Bluetooth</name>
+                <group>
+                    <name>Driver</name>
+                    <file>
+                        <name>$PROJ_DIR$\Applications\Output\Bluetooth\Driver\BluetoothDriver.hpp</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\Applications\Output\Bluetooth\Driver\IBluetoothDriver.hpp</name>
+                    </file>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Bluetooth\Bluetooth.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Bluetooth\BluetoothDirector.hpp</name>
+                </file>
             </group>
             <group>
                 <name>Display</name>
@@ -2518,6 +2537,21 @@
                         <name>$PROJ_DIR$\Applications\Output\Display\Driver\IDisplayDriver.hpp</name>
                     </file>
                 </group>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\DisplayDirector.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\DisplayView.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Display\EInkDisplay.hpp</name>
+                </file>
+            </group>
+            <group>
+                <name>Format</name>
+                <file>
+                    <name>$PROJ_DIR$\Applications\Output\Format\Format.hpp</name>
+                </file>
             </group>
         </group>
         <group>

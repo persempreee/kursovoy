@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <userOverrides>
     <override>
-        <path>D:\8 семестр\poip\курсач\1104ira\KURS-master\Kursovoy\AbstractHardware\USART.hpp</path>
-        <encoding>UTF-8</encoding>
-    </override>
-    <override>
-        <path>D:\8 семестр\poip\курсач\1104ira\KURS-master\Kursovoy\main.cpp</path>
-        <encoding>UTF-8</encoding>
-    </override>
-    <override>
-        <path>D:\8 семестр\poip\курсач\1804s\Kursovoy\main.cpp</path>
+        <path>D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\main.cpp</path>
         <encoding>UTF-8</encoding>
     </override>
     <override>
         <path>D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\AbstractHardware\SPI.hpp</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
+        <path>D:\kraizette\STD\VII-VIII\POIP\KURS\KURS\Kursovoy\Applications\Output\Display\EInkDisplay.hpp</path>
         <encoding>UTF-8</encoding>
     </override>
     <override>
