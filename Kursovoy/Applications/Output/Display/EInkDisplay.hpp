@@ -45,7 +45,7 @@ EInkDisplay(IDisplayDriver& driver): myDriver(driver)
   void ClearWindow() {
   } 
   
-  void DrawString(uint16_t x, SusuString& string) {
+  void DrawString(uint16_t x, SusuStringView& string) {
   }
  
 };

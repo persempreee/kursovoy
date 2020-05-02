@@ -1,92 +1,92 @@
-"D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button\TaskButton.cpp"
+"D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Button\TaskButton.cpp"
 -std=c++17
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Debug\Obj\TaskButton.pbi.dep
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Debug\Obj\TaskButton.pbi.dep
 -o
 TaskButton.pbi
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Button
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\wrapper
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\FreeRtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\include
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\Common
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\MemMang
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\MemMang
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\MyTasks
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\MyTasks
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Common
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\CMSIS
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\CMSIS
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Application
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Application
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Application\Diagnostic
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Application\Diagnostic
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware\GpioPort
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware\GpioPort
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware\IrqController
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware\IrqController
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Pin
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Pin
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Port
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Port
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Atomic
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Atomic
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\Common
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\..\CortexLib\Common\Singleton
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\Singleton
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\SPI
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\SPI
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\Pin
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\Pin
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\USART
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\USART
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Button
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Sensor
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Sensor
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Display
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Display
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Display\Driver
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Display\Driver
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Format
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Format
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\Driver
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth\Driver
 -I
 D:\Programs\IAR\arm\inc
 -I
@@ -94,83 +94,83 @@ D:\Programs\IAR\arm\inc\c
 -I
 D:\Programs\IAR\arm\inc\cpp
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\wrapper
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\FreeRtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\include
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\Common
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\MemMang
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\MemMang
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\MyTasks
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\MyTasks
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Common
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\CMSIS
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\CMSIS
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Application
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Application
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Application\Diagnostic
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Application\Diagnostic
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware\GpioPort
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware\GpioPort
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AHardware\IrqController
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AHardware\IrqController
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Pin
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Pin
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Registers\STM32F411
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Registers\STM32F411
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Registers
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Registers
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Port
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Port
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\AbstractHardware\Atomic
+D:\8 семестр\kursovoy\kursovoy\CortexLib\AbstractHardware\Atomic
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\Common
+D:\8 семестр\kursovoy\kursovoy\CortexLib\Common
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\CortexLib\Common\Singleton
+D:\8 семестр\kursovoy\kursovoy\CortexLib\Common\Singleton
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\SPI
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\SPI
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\Pin
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\Pin
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\AbstractHardware\USART
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\AbstractHardware\USART
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Button
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Button
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Sensor
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Sensor
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Display
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Display
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Display\Driver
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Display\Driver
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Format
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Format
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth
 -I
-D:\8 семестр\poip\курсач\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\Driver
+D:\8 семестр\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth\Driver
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

@@ -1,6 +1,6 @@
 #pragma once
-#include "susudefs.hpp" // for SusuString
+#include "susudefs.hpp" // for SusuStringView
 
 struct IBluetoothDriver {
-  virtual void Send(SusuString& message) = 0 ;
+  virtual void Send(SusuStringView& message) = 0 ;
 } ;

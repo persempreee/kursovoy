@@ -1,5 +1,6 @@
 #include "rtos.hpp"         // for Rtos
 #include "event.hpp"        // for Event
+#include "thread.hpp"       // for thread
 
 std::uint32_t SystemCoreClock = 16'000'000U ;
 
@@ -23,13 +24,18 @@ std::uint32_t SystemCoreClock = 16'000'000U ;
 #include "DisplayView.hpp" //for DisplayView
 #include "DisplayDirector.hpp" //for DisplayDirector
 #include "Format.hpp" //for Format
-#include "susudefs.hpp" // for SusuString
+#include "susudefs.hpp" // for SusuStringView
 
 #include "IBluetoothDriver.hpp" //for IBluetoothDriver
 #include "BluetoothDriver.hpp" //for BluetoothDriver
+#include "BluetoothDirector.hpp" //for BluetoothDirector
+#include "Bluetooth.hpp" //for Bluetooth
+
+#include "tim2registers.hpp"   //for SPI2
+
 
 using namespace std ;
-constexpr SusuString message(" Hello World!") ;
+// constexpr SusuStringView message(" Hello World!") ;
 
 extern "C" {
 int __low_level_init(void) {
@@ -42,6 +48,11 @@ int __low_level_init(void) {
   RCC::CFGR::SW::Hsi::Set() ;
   while (!RCC::CFGR::SWS::Hsi::IsSet()) {
   }
+  
+      RCC::APB1ENR::TIM2EN::Enable::Set(); //включение 2 таймера
+      TIM2::PSC::Write(7999); //деление на 8000
+      TIM2::ARR::Write(500); //скорость 0,5 мс (В "Hello World! " 13 символов. 500/13=38)
+      TIM2::CR1::CEN::Enable::Set(); //включение счетчика
   
   RCC::APB2ENR::SYSCFGEN::Enable::Set() ; 
   RCC::AHB1ENR::GPIOAEN::Enable::Set() ;
@@ -76,21 +87,26 @@ using BusyPin = Pin<GPIOC, 2U> ; //это Ирины штуки
 using DinPin = Pin<GPIOC, 2U> ; //это Ирины штуки
 using ClkPin = Pin<GPIOC, 3U> ; //это Ирины штуки
 
-    using MyUSART = USART<USART2, 16000000U> ; // моооооооооооооооооееееееееееееееее
+    // using MyUSART = USART<USART2, 16000000U> ; // моооооооооооооооооееееееееееееееее
+    // using MyBLuetoothDriver = BluetoothDriver<USART<USART2, 16000000U>> ; // моооооооооооооооооееееееееееееееее
 
 SensorDirector mySensorDirector; //это Ирины штуки
 TaskButton myTaskButton (mySensorDirector); //это Ирины штуки
 
+BluetoothDirector myBluetoothDirector ;
+
 
 int main()
 {
-  DisplayDriver<SPI<SPI2>,DinPin,ClkPin,CsPin,DcPin, ResetPin,BusyPin, //это Ирины штуки
-                400,300> Driver;
-  EInkDisplay<400,300> Display(Driver); //это Ирины штуки
+ // DisplayDriver<SPI<SPI2>,DinPin,ClkPin,CsPin,DcPin, ResetPin,BusyPin, //это Ирины штуки
+               // 400,300> Driver;
+ // EInkDisplay<400,300> Display(Driver); //это Ирины штуки
   using namespace OsWrapper; //это Ирины штуки
-  Rtos::CreateThread(mySensorDirector, "SensorDirector", ThreadPriority::normal); //это Ирины штуки
-  Rtos::CreateThread(myTaskButton, "Button", ThreadPriority::normal); //это Ирины штуки
-  Rtos::Start(); //это Ирины штуки
+ // Rtos::CreateThread(mySensorDirector, "SensorDirector", ThreadPriority::normal); //это Ирины штуки
+ // Rtos::CreateThread(myTaskButton, "Button", ThreadPriority::normal); //это Ирины штуки
+  
+  Rtos::CreateThread(myBluetoothDirector, "BluetoothDirector", ThreadPriority::normal) ;
+  Rtos::Start() ; //это Ирины штуки
   
   
   //-----------------А это мое---------------------
@@ -104,9 +120,9 @@ int main()
   
  // MyUSART::Config(USART2Config) ;
  // MyUSART::On() ;
- // for (;;) {
+ //     for (;;) {
    // MyUSART::SendData(message.str, message.size) ;
   //  for (auto i=0 ; i<10000000 ; i++) ;
- // }
+ //     }
   return 0;
 };

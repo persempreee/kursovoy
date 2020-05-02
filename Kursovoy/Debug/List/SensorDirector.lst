@@ -1,120 +1,102 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         25/Apr/2020  12:04:44
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         02/May/2020  13:41:56
 # Copyright 1999-2019 IAR Systems AB.
 #
 #    Cpu mode     =  
 #    Endian       =  little
 #    Source file  =
 #        D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Sensor\SensorDirector.cpp
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\SensorDirector.cpp
 #    Command line =
-#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EWA1CE.tmp ("D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Sensor\SensorDirector.cpp"
-#        -lC "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List"
-#        -lA "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List"
-#        -o "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\Obj"
-#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
-#        --no_clustering --no_scheduling --debug --endian=little
-#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        -f C:\Users\-ACD6~1\AppData\Local\Temp\EWD509.tmp ("D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\SensorDirector.cpp"
+#        -lC "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -lA
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -o "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e
+#        --fpu=VFPv4_sp --dlib_config
 #        D:\Programs\IAR\arm\inc\c\DLib_Config_Normal.h -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\" -I
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\wrapper\FreeRtos\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\" -I
 #        "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\wrapper\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\wrapper\FreeRtos\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\include\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\Common\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\MyTasks\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Common\" -I
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\include\" -I
 #        "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\CMSIS\" -I
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\" -I
 #        "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Application\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\Common\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Application\Diagnostic\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\IAR\ARM_CM4F\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\GpioPort\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Rtos\FreeRtos\portable\MemMang\"
+#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\MyTasks\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Common\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\CMSIS\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Application\Diagnostic\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\" -I "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\GpioPort\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AHardware\IrqController\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AHardware\IrqController\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Pin\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\STM32F411\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Port\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Registers\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Port\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\" -I
+#        "D:\8
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\..\CortexLib\Common\Singleton\"
+#        -I "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\AbstractHardware\Atomic\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\SPI\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\Pin\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\Common\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\AbstractHardware\USART\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Button\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\..\CortexLib\Common\Singleton\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\" -I
+#        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\Display\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\SPI\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\Display\Driver\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\Pin\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\Format\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\AbstractHardware\USART\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth\"
 #        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Button\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Sensor\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Display\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Display\Driver\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Format\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\"
-#        -I "D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Output\Bluetooth\Driver\"
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Output\Bluetooth\Driver\"
 #        -Ol --c++ --no_exceptions --no_rtti)
 #    Locale       =  C
 #    List file    =
 #        D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List\SensorDirector.lst
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List\SensorDirector.lst
 #    Object file  =
 #        D:\8
-#        @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\Obj\SensorDirector.o
+#        @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\Obj\SensorDirector.o
 #
 ###############################################################################
 
-D:\8 @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Applications\Sensor\SensorDirector.cpp
+D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\SensorDirector.cpp
       1          //SensorDirector.cpp
 Warning[Ms014]: some characters could not be correctly encoded in "D:\8
-          @@@@@@@\poip\@@@@@@\norm\KURS-master\Kursovoy\Debug\List\SensorDirec
-          tor.s", and have been replaced with '@'. The first such character has
-          unicode code point 0x441 ("@")
+          @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List\SensorDirector.s", and
+          have been replaced with '@'. The first such character has unicode
+          code point 0x441 ("@")
       2          
       3          #include "SensorDirector.hpp" 
 

@@ -4,14 +4,14 @@
 #include <iostream>
 #include "Pin.hpp" //for TX
 #include "USART.hpp" // for USART
-#include "susudefs.hpp" // for SusuString
+#include "susudefs.hpp" // for SusuStringView
 
-template <typename USART, typename TX>
+template <typename USART>       // , typename TX
 class BluetoothDriver: public IBluetoothDriver {
 public: 
   BluetoothDriver() {
     
-    TX::SetAlternate() ;
+  //  TX::SetAlternate() ;
     
     // using MyUSART = USART<USART2, 16000000U> ;
     UsartConfig USART2Config ;
@@ -26,11 +26,9 @@ public:
   }
   
   
-  void Send(SusuString& message) override {
-    for (;;) {
+  void Send(SusuStringView& message) override {
     USART::SendData(message.str, message.size) ;
-    for (auto i=0 ; i<10000000 ; i++) ;
-  }
+   // for (auto i=0 ; i<10000000 ; i++) ;
   }
   
 } ;

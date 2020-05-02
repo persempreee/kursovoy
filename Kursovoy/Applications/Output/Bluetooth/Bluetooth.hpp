@@ -1,6 +1,6 @@
 #pragma once
 
-#include "susudefs.hpp" //for SusuString
+#include "susudefs.hpp" //for SusuStringView
 #include "IBluetoothDriver.hpp" //for IBluetoothDriver
 
 class Bluetooth {
@@ -11,7 +11,7 @@ public:
   Bluetooth (IBluetoothDriver& bluetoothdriver): ibluetoothdriver(bluetoothdriver) {
   }
   
-  static void Send (SusuString& message) {
-    ibluetoothdriver::Send(message) ;
+    void Send (SusuStringView& message) {
+    ibluetoothdriver.Send(message) ;
   }
-}
+} ;
