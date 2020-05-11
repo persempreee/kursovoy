@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM        02/May/2020  13:41:56
+// IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM        11/May/2020  14:10:10
 // Copyright 1999-2019 IAR Systems AB.
 //
 //    Cpu mode     =  
@@ -9,7 +9,7 @@
 //        D:\8
 //        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\SensorDirector.cpp
 //    Command line =
-//        -f C:\Users\-ACD6~1\AppData\Local\Temp\EWD509.tmp ("D:\8
+//        -f C:\Users\-ACD6~1\AppData\Local\Temp\EW8D0E.tmp ("D:\8
 //        @@@@@@@\kursovoy\kursovoy\Kursovoy\Applications\Sensor\SensorDirector.cpp"
 //        -lC "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -lA
 //        "D:\8 @@@@@@@\kursovoy\kursovoy\Kursovoy\Debug\List" -o "D:\8

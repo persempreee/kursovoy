@@ -1,10 +1,10 @@
 #pragma once
 
+#include <cstring> // for strlenght
 #include "IBluetoothDriver.hpp"  //for IBluetoothDriver
-#include <iostream>
 #include "Pin.hpp" //for TX
 #include "USART.hpp" // for USART
-#include "susudefs.hpp" // for SusuStringView
+#include "susudefs.hpp" // for SusuString
 
 template <typename USART>       // , typename TX
 class BluetoothDriver: public IBluetoothDriver {
@@ -26,8 +26,12 @@ public:
   }
   
   
-  void Send(SusuStringView& message) override {
-    USART::SendData(message.str, message.size) ;
+  void Send(SusuString<40>& message) override {
+    const char* str = message.GetString() ;
+    auto size = std::strlen(str) ;
+    if (size <= message.Size) {
+    USART::SendData(message.GetString(), size) ;
+    }
    // for (auto i=0 ; i<10000000 ; i++) ;
   }
   

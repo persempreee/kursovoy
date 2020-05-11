@@ -11,7 +11,7 @@ public:
   Bluetooth (IBluetoothDriver& bluetoothdriver): ibluetoothdriver(bluetoothdriver) {
   }
   
-    void Send (SusuStringView& message) {
+    void Send (SusuString<40>& message) {
     ibluetoothdriver.Send(message) ;
   }
 } ;

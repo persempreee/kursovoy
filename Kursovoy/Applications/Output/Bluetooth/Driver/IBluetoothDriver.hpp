@@ -2,5 +2,5 @@
 #include "susudefs.hpp" // for SusuStringView
 
 struct IBluetoothDriver {
-  virtual void Send(SusuStringView& message) = 0 ;
+  virtual void Send(SusuString<40>& message) = 0 ;
 } ;
